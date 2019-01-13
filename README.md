@@ -1,8 +1,10 @@
 # Mathematics_for_ML
-Some math materials I used for Machine Learning
+Some math materials I used for Machine Learning. 
+
+MIT OCW rocks!!
 
 ## Roadmap
-| spectrum | course |
+| spectrum | area |
 | --- | --- |
 | Primer 1 | Multivariate Calculus |
 | Primer 2 | Differential Equations |
