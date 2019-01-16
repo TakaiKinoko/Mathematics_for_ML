@@ -14,3 +14,18 @@ x<sup>2</sup> + y<sup>2</sup> = 1
     2x + 2y dy/dx = 0
 * step 4: simplify
     dy/dx = - x/y
+
+#### explicit v.s. implicit 
+y<sup>4</sup> + xy<sup>2</sup> - 2 = 0
+
+* explicit: 
+    * treat the equation as a function on y<sup>2</sup>
+    * solve y<sup>2</sup> inside the quadratic equation
+    * take square root of both side will get y
+* implicit: 
+    * leave the equation as is and differentiate both sides:
+    4y<sup>3</sup>y' + x(2yy') - 0 = 0
+    * factor out y'
+        (4y<sup>3</sup> + 2xy)y' = -y<sup>2</sup>
+    * so the solution (**slope**) is 
+        y' = - y<sup>2</sup> / (4y<sup>3</sup> + 2xy)
