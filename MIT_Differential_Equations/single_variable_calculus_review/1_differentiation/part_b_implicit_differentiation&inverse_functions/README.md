@@ -2,7 +2,7 @@
 * Q: Given y = x <sup>m/n</sup> where m and n are integers, compute dy/dx.
 * Sol: dy/dx = (m/n)x<sup>(m/n-1)</sup>
 
-#### derivative to non-functions
+#### derivative to non-functions (slope of tangent to circle)
 
 x<sup>2</sup> + y<sup>2</sup> = 1
 
@@ -23,9 +23,31 @@ y<sup>4</sup> + xy<sup>2</sup> - 2 = 0
     * solve y<sup>2</sup> inside the quadratic equation
     * take square root of both side will get y
 * implicit: 
+    * y is an implicit expression of x, thus we can use the chain rule.
     * leave the equation as is and differentiate both sides:
     4y<sup>3</sup>y' + x(2yy') - 0 = 0
     * factor out y'
         (4y<sup>3</sup> + 2xy)y' = -y<sup>2</sup>
     * so the solution (**slope**) is 
         y' = - y<sup>2</sup> / (4y<sup>3</sup> + 2xy)
+    * this is not a complete solution though, it doesn't tell what y is in terms of x. 
+        * when x = 1 it's easy to see that y = 1, we can plug both into the implicit formula for y'.
+        * but when x = 2, there's no easy way to see what the solution of y is thus we're stuck with the explict formula to find y. 
+    
+#### another implicit example
+What's the slope of the tangent line to the curve y<sup>3</sup> + x<sup>3</sup> = 3xy at the point (4/3, 2/3)? 
+* it's hard to find y in terms of x
+* (d/dx) (y<sup>3</sup> + x<sup>3</sup>) = d/dx 3xy
+* 3y<sup>2</sup> * dy/dx + 3 x<sup>2</sup> = 3y + 3x(dy/dx)
+* this is a linear equation in a sense, relatively easy to solve
+* dy/dx(3y<sup>2</sup> - 3x) = 3y - 3x<sup>2</sup>
+* dy/dx = (y-x<sup>2</sup>)/ (y<sup>2</sup> - x)
+* now because we already have a point (4/3, 2/3), just plug it into the equation above.
+
+## use of implicit differentiation
+e.g. finding the derivative of inverse functions
+* given y = f(x), g(x) = x, then g(f(x)) = x, g=f<sup>-1<sup>, f=g<sup>-1<sup>
+* plot f and f<sup>-1<sup> on the same graph: reflect f across y = x
+
+#### implicit differentiation allows us to find the derivative of any inverse function provided we know the derivative of the function
+* ex: y = tan<sup>-1</sup>x [this is just arctan x]
