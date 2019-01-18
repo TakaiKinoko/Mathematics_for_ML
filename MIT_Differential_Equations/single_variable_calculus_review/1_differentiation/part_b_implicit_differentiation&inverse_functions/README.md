@@ -51,3 +51,28 @@ e.g. finding the derivative of inverse functions
 
 #### implicit differentiation allows us to find the derivative of any inverse function provided we know the derivative of the function
 * ex: y = tan<sup>-1</sup>x [this is just arctan x]
+
+
+#### natual log properties
+* ln(x<sub>1</sub>x<sub>2</sub>) = lnx<sub>1</sub> + lnx<sub>2</sub>
+
+* ln 1 = 0
+* ln e = 1
+
+#### derivatives of logarithms
+use implicit differentiation (to find the derivatives of ANY **inverse functions**)
+
+w = ln x ==> e<sup>w</sup> = x 
+==> d/dx e<sup>w</sup> = d/dx x = 1
+==> (d/dw e<sup>w</sup>)(dw/dx) = 1
+==> e<sup>w</sup> dw/dx = 1
+==> dw/dx = 1/e<sup>w</sup> = 1/x 
+
+#### derivatives of a^x
+d/dx a<sup>x</sup> = M(a)a<sup>x</sup>
+
+* to differentiate any exponential: two methods
+    1. d/dx a<sup>x</sup> = ?
+        use base e 
+        => a<sup>x</sup> = (e<sup>xlna</sup>)
+        => 
