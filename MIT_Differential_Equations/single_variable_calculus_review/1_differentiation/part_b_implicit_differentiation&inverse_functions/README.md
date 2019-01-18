@@ -72,9 +72,18 @@ use implicit differentiation (to find the derivatives of ANY **inverse functions
 d/dx a<sup>x</sup> = M(a)a<sup>x</sup>
 
 * to differentiate any exponential: two methods
-    1. d/dx a<sup>x</sup> = ?
+    1.  d/dx a<sup>x</sup> = ?
         * use base e 
         * => a<sup>x</sup> = (e<sup>x ln a</sup>)
         * => (ln a)e<sup>x ln a</sup> (chain rule, see ln a as a constant)
         * => (ln a)a<sup>x</sup>
         So the magic number **M(a)** is ln a
+    1. use logarithmic differentiation
+        sometimes when dealing with d/dx u= ?, it's easier to compute d/dx ln u.
+        * e.g. 
+            * d/dx a<sup>x</sup> = ?
+            * u = a<sup>x</sup>
+            * ln u = x ln a
+            * (ln u)' = ln a 
+            * u' = u ln a
+            * d/dx a<sup>x</sup> = (ln a) a<sup>x</sup>
