@@ -9,3 +9,4 @@
     * f'(1) = 1 
     * ln x = 0 + 1*(x-1) = x - 1 
     * line y = x-1 and the curve y = ln x are near at the point x = 1
+

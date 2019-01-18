@@ -87,3 +87,9 @@ d/dx a<sup>x</sup> = M(a)a<sup>x</sup>
             * (ln u)' = ln a 
             * u' = u ln a
             * d/dx a<sup>x</sup> = (ln a) a<sup>x</sup>
+    * Example 
+        * v = x<sup>x</sup>, ln v = x ln x
+        * (ln v)' = x(ln x)' + ln x
+        * v'/v = 1 + ln x
+        * v' = v(1 + ln x) 
+        * d/dx x<sup>x</sup> = x<sup>x</sup>(1+ ln x)
