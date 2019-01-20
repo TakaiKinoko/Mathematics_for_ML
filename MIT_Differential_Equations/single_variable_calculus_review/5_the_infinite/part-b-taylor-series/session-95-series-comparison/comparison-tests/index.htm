@@ -1,0 +1,1000 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title>Comparison Tests | Session 95: Series Comparison | Part B: Taylor Series | 5. Exploring the Infinite | Single Variable Calculus | Mathematics | MIT OpenCourseWare</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="18-01sc-single-variable-calculus-fall-2010" name="WT.cg_n">
+<meta content="Comparison Tests" name="WT.cg_s">
+<meta content="" name="Description">
+<meta content="Jerison, David" name="Author">
+<meta content="18.01SC,18.01,differentiation of functions,integration of functions,limits,continuity,differentiation rules,extremum problems,definite integration,indefinite integration,fundamental theorem of calculus,techniques of integration,approximation of definite integrals,improper integrals,l'Hôpital's rule,Calculus,Differential Equations" name="keywords">
+<meta content="18.01SC Single Variable Calculus | Comparison Tests" name="Search_Display">
+<meta content="Calculus" itemprop="about">
+<meta content="Differential Equations" itemprop="about">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/search.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/courses_new.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/jquery.jscrollpane.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/media_tabs.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../../common/styles/scholar2.css">
+<link href="https://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<link rel="canonical" href="https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests/">
+<link rel="apple-touch-icon" href="../../../../../common/images/apple-touch-icon.png">
+<script type="text/javascript" src="../../../../../common/scripts/jquery.js"></script><script type="text/javascript" src="../../../../../common/scripts/ocw-media-utils-offline.js"></script><script type="text/javascript" src="../../../../../common/scripts/ocw-offline.js"></script><script type="text/javascript" src="../../../../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../../../../common/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="../../../../../common/scripts/jquery.jscrollpane.min.js"></script><script type="text/javascript" src="../../../../../common/scripts/expandy.js"></script><script type="text/javascript" src="../../../../../common/scripts/bubble-popup-offline.js"></script><script type="text/javascript">
+      $(document).ready(function() {
+        $("#tabs").tabs();
+        IpadScroller();
+      });
+    </script>
+</head>
+<body>
+<div id="fbQuote" name="fbQuote">
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '549343822066688',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v2.11'
+            });
+	        FB.AppEvents.logEvent('Share',1);
+          };
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+</div>
+
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    
+        
+	
+
+        <header id="top"><div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="../../../../../common/images/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe">
+<aside class="module" aria-label="Connect with OCW"><table class="social"><tbody><tr>
+<td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="../../../../../common/images/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td>
+<a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="../../../../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a>   <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="https://ocw.mit.edu/images/icon_twitter.png" alt="Click to visit our Twitter feed."></a>   <a aria-label="YouTube" href="https://www.youtube.com/mitocw"><img src="https://ocw.mit.edu/images/icon_yt.png" alt="Click to visit our YouTube page."></a>   <a aria-label="Open Matters blog on WordPress" href="https://mitopencourseware.wordpress.com/"><img src="https://ocw.mit.edu/images/icon_wp.png" alt="Click to visit our blog on WordPress."></a>
+</td>
+        </tr></tbody></table></aside><nav aria-label="Help Links" class="helplinks"><a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="../../../../../common/jsp/feedback.htm">Contact Us</a>   </nav>
+</div>
+<div class="clear"> </div>
+<!--googleon: index-->
+</div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75">
+<div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site"><ul id="menu" role="presentation">
+<li id="menu_home">
+<a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="../../../../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+</li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses">
+<a href="#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a">
+<nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul></nav><nav aria-labelledby="mm-collections"><span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    </ul></nav><nav class="col_1b" aria-labelledby="mm-translated-courses"><span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul></nav>
+</div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists"><span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/spanish" aria-label="Spanish">Español / Spanish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul></nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2">
+<a href="#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">OCW Educator Portal</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+        <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">OCW Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">K-12</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://www.k12videos.mit.edu/videos" aria-label="External Link: MIT Plus K12 Videos">MIT+K12 Videos</a></li>
+    </ul>
+<span id="mm-higher-ed" class="nav" aria-hidden="true">Higher Ed</span>
+    <ul>
+<li><a href="https://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_3">
+<a href="#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/give/shop-ocw">Shop OCW</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_4">
+<a href="#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    </ul></nav></div>
+    </li>
+</ul></nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script><div id="search" role="search" class="grid_4 omega">
+    	<table class="search"><tbody><tr>
+<td><div class="searchboxheader"><searchbox-only resultsurl="/search/ocwsearch.htm"></searchbox-only></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br><b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br><b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br><b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br><b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br></span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr></tbody></table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</header><!-- top end --><div id="center_media">
+      	<div id="grid">
+      		<div id="left">
+        		<nav id="breadcrumb_media" aria-label="Breadcrumb"><p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/mathematics">Mathematics</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../../contents/index.htm">Single Variable Calculus</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../../contents/unit-5-exploring-the-infinite/index.htm">5. Exploring the Infinite</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../../contents/unit-5-exploring-the-infinite/part-b-taylor-series/index.htm">Part B: Taylor Series</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../../contents/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/index.htm">Session 95: Series Comparison</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Comparison Tests
+         
+    
+</p>
+
+            	</nav><div class="clear"></div>
+        		<div id="media_title">
+        		<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Comparison Tests
+        </span>
+    </h1>
+        		</div>
+           		<div class="clear"></div>
+           		<div id="course_wrapper_media">
+           			<nav id="course_nav" aria-label="Course"><script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><ul>
+<li class="">
+			   			<a href="../../../../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../../contents/syllabus/index.htm">
+		                  Syllabus  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="1.-differentiation" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menu1.-differentiation'); toggleClass('1.-differentiation'); return false">
+		                  <img src="../../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../../contents/1.-differentiation/index.htm" class="">
+		                  1. Differentiation  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menu1.-differentiation" class="">
+<li class="">
+				 		<a href="../../../../../contents/1.-differentiation/part-a-definition-and-basic-rules/index.htm" class="">Part A: Definition and Basic Rules</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/1.-differentiation/part-b-implicit-differentiation-and-inverse-functions/index.htm" class="">Part B: Implicit Differentiation and Inverse Functions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/1.-differentiation/exam-1/index.htm" class="">Exam 1</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-2-applications-of-differentiation" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-2-applications-of-differentiation'); toggleClass('unit-2-applications-of-differentiation'); return false">
+		                  <img src="../../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../../contents/unit-2-applications-of-differentiation/index.htm" class="">
+		                  2. Applications of Differentiation  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-2-applications-of-differentiation" class="">
+<li class="">
+				 		<a href="../../../../../contents/unit-2-applications-of-differentiation/part-a-approximation-and-curve-sketching/index.htm" class="">Part A: Approximation and Curve Sketching</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-2-applications-of-differentiation/part-b-optimization-related-rates-and-newtons-method/index.htm" class="">Part B: Optimization, Related Rates and Newton's Method</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-2-applications-of-differentiation/part-c-mean-value-theorem-antiderivatives-and-differential-equations/index.htm" class="">Part C: Mean Value Theorem, Antiderivatives and Differential Equa</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-2-applications-of-differentiation/exam-2/index.htm" class="">Exam 2</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-3-the-definite-integral-and-its-applications" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-3-the-definite-integral-and-its-applications'); toggleClass('unit-3-the-definite-integral-and-its-applications'); return false">
+		                  <img src="../../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../../contents/unit-3-the-definite-integral-and-its-applications/index.htm" class="">
+		                  3. The Definite Integral and its Applications  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-3-the-definite-integral-and-its-applications" class="">
+<li class="">
+				 		<a href="../../../../../contents/unit-3-the-definite-integral-and-its-applications/part-a-definition-of-the-definite-integral-and-first-fundamental-theorem/index.htm" class="">Part A: Definition of the Definite Integral and First Fundamental</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-3-the-definite-integral-and-its-applications/part-b-second-fundamental-theorem-areas-volumes/index.htm" class="">Part B: Second Fundamental Theorem, Areas, Volumes</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-3-the-definite-integral-and-its-applications/part-c-average-value-probability-and-numerical-integration/index.htm" class="">Part C: Average Value, Probability and Numerical Integration</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-3-the-definite-integral-and-its-applications/exam-3/index.htm" class="">Exam 3</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-4-techniques-of-integration" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-4-techniques-of-integration'); toggleClass('unit-4-techniques-of-integration'); return false">
+		                  <img src="../../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../../contents/unit-4-techniques-of-integration/index.htm" class="">
+		                  4. Techniques of Integration  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-4-techniques-of-integration" class="">
+<li class="">
+				 		<a href="../../../../../contents/unit-4-techniques-of-integration/part-a-trigonometric-powers-trigonometric-substitution-and-completing-the-square/index.htm" class="">Part A: Trigonometric Powers,  Trigonometric Substitution and Com</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-4-techniques-of-integration/part-b-partial-fractions-integration-by-parts-arc-length-and-surface-area/index.htm" class="">Part B: Partial Fractions, Integration by Parts, Arc Length, and </a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-4-techniques-of-integration/part-c-parametric-equations-and-polar-coordinates/index.htm" class="">Part C: Parametric Equations and Polar Coordinates</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../../contents/unit-4-techniques-of-integration/exam-4/index.htm" class="">Exam 4</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-5-exploring-the-infinite" class="mC">
+						<a href="#" class="" onclick="toggleMenu('menuunit-5-exploring-the-infinite'); toggleClass('unit-5-exploring-the-infinite'); return false">
+		                  <img src="../../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Collapse Menu" title="Collapse Menu"></a>
+		                <a href="../../../../../contents/unit-5-exploring-the-infinite/index.htm" class="">
+		                  5. Exploring the Infinite  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-5-exploring-the-infinite" class="selected">
+<li class="">
+				 		<a href="../../../../../contents/unit-5-exploring-the-infinite/part-a-lhospitals-rule-and-improper-integrals/index.htm" class="">Part A: L'Hospital's Rule and Improper Integrals</a>
+		            </li>
+		            <li class="selected">
+				 		<a href="../../../../../contents/unit-5-exploring-the-infinite/part-b-taylor-series/index.htm" class="selected">Part B: Taylor Series</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../../contents/final-exam/index.htm">
+		                  Final Exam  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+<!--Left Nav Ends --></nav><main id="course_inner_media" aria-labelledby="media_title"><p><img src="../../../../../common/images/scholar_bar_chp.png" style="width: 543px; height: 32px; border: 1px solid #790835; margin-top: -16px;" alt="OCW Scholar"></p>
+      					 
+        <div class="" id="parent-fieldname-text">
+            
+            
+        </div>
+    
+      					     
+    
+    
+
+
+
+<script type="text/javascript">var caption_embed_1 ={'English - US': '/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests/1424365.srt'}</script><div id="media-embed">
+         <div class="attention_message" id="embed_1">
+<p>Flash and JavaScript are required for this feature.</p>
+<p>Download the video from <a href="http://itunes.apple.com/us/podcast/comparison-tests/id414308064?i=90320229">iTunes U</a> or the <a href="http://www.archive.org/download/MIT18_01SCF10/MIT18_01SCF10Rec_73_300k.mp4">Internet Archive</a>.</p>
+</div>
+     </div>
+    
+     <script type="text/javascript">ocw_embed_chapter_media('embed_1', 'https://www.youtube.com/v/dGKvUUmMGoU', 'youtube', '/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests', 'https://img.youtube.com/vi/dGKvUUmMGoU/0.jpg',0,0, 'https://ocw.mit.edu/courses/mathematics/18-01sc-single-variable-calculus-fall-2010/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests/1424365.srt')</script><div id="transcript1"></div>
+				 <script type="text/javascript">createThreePlayParams(2, 1424365, "embed_1", 0, 0)</script><script type="text/javascript">
+		window.onload=function(){
+		init();
+		
+		}
+		var tabLinks = new Array();
+		var contentDivs = new Array();
+		function init() {
+		  // Grab the tab links and content divs from the page
+		  var tabListItems = document.getElementById('tabs').childNodes;
+		  for ( var i = 0; i < tabListItems.length; i++ ) {
+			if ( tabListItems[i].nodeName == "LI" ) {
+			  var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+			  var id = getHash( tabLink.getAttribute('href') );
+			  tabLinks[id] = tabLink;
+			  contentDivs[id] = document.getElementById( id );
+			}
+		  }
+		  // Assign onclick events to the tab links, and
+		  // highlight the first tab
+		  var i = 0;
+		  for ( var id in tabLinks ) {
+			tabLinks[id].onclick = showTab;
+			tabLinks[id].onfocus = function() { this.blur() };
+			if ( i == 0 ) tabLinks[id].className = 'selected';
+			i++;
+		  }
+		  // Hide all content divs except the first
+		  var i = 0;
+		  for ( var id in contentDivs ) {
+			if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+			i++;
+		  }
+		}
+		function showTab() {
+		  var selectedId = getHash( this.getAttribute('href') );
+		  // Highlight the selected tab, and dim all others.
+		  // Also show the selected content div, and hide all others.
+		  for ( var id in contentDivs ) {
+			if ( id == selectedId ) {
+			  tabLinks[id].className = 'selected';
+			  contentDivs[id].className = 'tabContent';
+			} else {
+			  tabLinks[id].className = '';
+			  contentDivs[id].className = 'tabContent hide';
+			}
+		  }
+		  // Stop the browser following the link
+		  return false;
+		}
+		function getFirstChildWithTagName( element, tagName ) {
+		  for ( var i = 0; i < element.childNodes.length; i++ ) {
+			if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		  }
+		}
+		function getHash( url ) {
+		  var hashPos = url.lastIndexOf ( '#' );
+		  return url.substring( hashPos + 1 );
+		}
+ </script><div id="media_tabs">
+     
+        <ul id="tabs">
+<li class="first">
+                <a href="#vid_about" class="selected">Transcript</a>
+            </li>
+            <li class="">
+                <a href="#vid_index" class="">Download this Video</a>
+            </li>
+        </ul>
+<div id="vid_about" itemprop="description" class="tabContent">
+<ul><li><a class="transcript-link" title="Open in a new window." alt="Open in a new window." style="text-decoration: none; font-size: 1.0em;" target="_blank" text-decoration: none font-size: href="../../../../../contents/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests/1424365.pdf"> Download English-US transcript (PDF)</a></li></ul>
+<p><span m="7210"> Hi.</span> </p>
+<p><span m="7715">Welcome back to recitation.</span> </p>
+<p><span m="9255">In class, you've been learning about convergence tests for</span> <span m="11815">infinite series.</span> </p>
+<p><span m="12835">I have here three examples of series that I happen to like.</span> </p>
+<p><span m="17085">So the first one is the sum from n equals 0 to infinity of</span> <span m="21545">5n plus 2 divided by n cubed plus 1.</span> </p>
+<p><span m="25195">The second one is the sum from n equals 1 to infinity of the</span> <span m="28585">quantity 1 plus the square root of 5 over 2, all that to</span> <span m="32625">the nth power.</span> </p>
+<p><span m="33665">And the third one is the sum from n equals 1 to infinity of</span> <span m="36625">the natural log of n divided by n squared.</span> </p>
+<p><span m="39325">So what I'd like you to do for each of these three series is</span> <span m="42535">to figure out whether or not they converge.</span> </p>
+<p><span m="44325">So whether they converge, or whether they diverge.</span> </p>
+<p><span m="46615">So why don't you pause the video, take some time to work</span> <span m="48655">that out, come back, and we can work on it together.</span> </p>
+<p><span m="59920">Welcome back.</span> </p>
+<p><span m="60675">Hopefully you had some luck working on these series.</span> </p>
+<p><span m="63165">So let's talk about how we do them.</span> </p>
+<p><span m="64955">So I'll start with the first one here.</span> </p>
+<p><span m="67005">So this first one, the function that we're, that</span> <span m="70267">we're summing is this 5n plus 2 divided by n cubed plus 3.</span> </p>
+<p><span m="76935">And so you want to know, does that sum of that expression,</span> <span m="81485">of n goes from 1 to infinity, does that converge?</span> </p>
+<p><span m="84445">Does it reach some finite value?</span> </p>
+<p><span m="85935">Or does it diverge?</span> </p>
+<p><span m="87414">Does it either, you know, oscillate, or go to infinity,</span> <span m="91195">or something like that?</span> </p>
+<p><span m="92755">So for one thing you can always do, is something like a</span> <span m="97615">comparison test. And so what you want to do there, is you</span> <span m="99745">want to extract the information from the</span> <span m="102045">expression for the summand.</span> </p>
+<p><span m="103835">You want to figure out, you know, about how big this is.</span> </p>
+<p><span m="106735">What are the important parts of it?</span> </p>
+<p><span m="108575">So in this case, you have a ratio.</span> </p>
+<p><span m="110285">And so when you have a ratio, what you want to do, is you</span> <span m="111884">want to look at what's the magnitude of the top, and</span> <span m="114854">what's the magnitude of the bottom.</span> </p>
+<p><span m="116445">So roughly speaking, the magnitude of the top is of the</span> <span m="119575">order of n.</span> </p>
+<p><span m="121035">Right?</span> </p>
+<p><span m="121325">It's 5n.</span> </p>
+<p><span m="122835">The 5 is just a constant multiple.</span> </p>
+<p><span m="124785">That's not going to make a whole big difference.</span> </p>
+<p><span m="126255">And the plus 2 is just much, much, much smaller than the n</span> <span m="129225">when n gets very, very large.</span> </p>
+<p><span m="131115">So the, we can say that the order of magnitude of the top</span> <span m="134715">here is of the order of n, and similarly, the order of</span> <span m="138105">magnitude of the bottom is of the order of n cubed.</span> </p>
+<p><span m="141035">Right?</span> </p>
+<p><span m="141275">The plus 1 is much, much, much smaller than the n cubed, so</span> <span m="144245">it's not, it's almost insignificant.</span> </p>
+<p><span m="148035">So roughly speaking, we should expect this to be of the same</span> <span m="153615">behavior as if we just had n over n cubed,</span> <span m="156795">which is 1 over n squared.</span> </p>
+<p><span m="158445">And we know that 1 over n squared, the series 1 over n</span> <span m="161885">squared from n equals 1 to infinity, converges.</span> </p>
+<p><span m="165035">So that's sort of just a sort of a way of</span> <span m="169375">thinking about this.</span> </p>
+<p><span m="170115">And we can formalize it using the limit comparison test.</span> </p>
+<p><span m="173095">So the idea here for part A is to use the limit comparison</span> <span m="183595">test. So what we want to compute--</span> <span m="186105">so I'm going to put a 5 in.</span> </p>
+<p><span m="188855">So I'm going to make it 5 over n squared, because we</span> <span m="191225">had this 5 up here.</span> </p>
+<p><span m="192975">So we have an is equal to 5n plus 2 over n cubed plus 1.</span> </p>
+<p><span m="201115">And I want to limit compare it with--</span> <span m="204635">I'm going to compare my series with the series sum from n</span> <span m="215385">equals 1 to infinity of 5 over n squared.</span> </p>
+<p><span m="219495">Now--</span> <span m="221215">I'm talking about this 5, right?</span> </p>
+<p><span m="223005">This 5 doesn't matter.</span> </p>
+<p><span m="224225">If this series-- if 1 over n squared, that sum converges</span> <span m="228615">then 5 over n squared, that sum converges to exactly 5</span> <span m="232385">times as much.</span> </p>
+<p><span m="233165">And if, you know, if I wrote a divergent thing here, and then</span> <span m="236245">multiplied it by 5, the result multiplied by</span> <span m="238565">5 would still diverge.</span> </p>
+<p><span m="239765">So this constant multiple isn't going to matter.</span> </p>
+<p><span m="241665">And I'm just choosing, I'm just putting the 5 in there</span> <span m="244185">because of this 5 we saw over here.</span> </p>
+<p><span m="246925">So OK.</span> </p>
+<p><span m="247625">So let's select work it out, then.</span> </p>
+<p><span m="249735">So the limit comparison test says--</span> <span m="252845">so we look at the limit as n goes to infinity of the ratio</span> <span m="258274">of the two things that we're interested in.</span> </p>
+<p><span m="260285">So in this case, this is 5n and plus 2 over n cubed plus</span> <span m="265455">1, divided by 5 over n squared.</span> </p>
+<p><span m="270985">And you can--</span> <span m="271535">OK.</span> </p>
+<p><span m="271715">So this is a ratio of two ratios, so we can rewrite it</span> <span m="275695">by multiplying upstairs, and we get that this is equal to</span> <span m="279235">the limit as n goes to infinity of 5n cubed plus 2 n</span> <span m="288705">squared over 5n cubed plus 5.</span> </p>
+<p><span m="293655">And so we've seen before, when we were dealing with limits,</span> <span m="296835">that when you have a ratio of two polynomials, as the</span> <span m="300645">variable goes to infinity, the limit is what you get just by</span> <span m="304595">comparing the leading terms. So in this case, we just have</span> <span m="308375">to look at 5n cubed over 5n cubed, and that's indeed 1.</span> </p>
+<p><span m="312605">OK, so this is 1.</span> </p>
+<p><span m="313735">So by the limit comparison test, our series, the sum of</span> <span m="319085">this an, converges if and only if this series converges.</span> </p>
+<p><span m="323265">And we already said that we know sum 1</span> <span m="325375">over n squared converges.</span> </p>
+<p><span m="327055">So by the limit comparison test, since sum 1 over n</span> <span m="329585">squared converges, our series converges.</span> </p>
+<p><span m="336630">Great.</span> </p>
+<p><span m="337175">OK.</span> </p>
+<p><span m="337585">So that's the first one.</span> </p>
+<p><span m="339905">Let's look at the second one.</span> </p>
+<p><span m="341965">So the second one here is the sum from n equals 1 to</span> <span m="345485">infinity of 1 plus the square root of 5 over 2.</span> </p>
+<p><span m="349555">That whole thing to the nth power.</span> </p>
+<p><span m="351755">Now, if you look at this, the thing you should recognize</span> <span m="354135">this as, is just a particular geometric series.</span> </p>
+<p><span m="357485">Right?</span> </p>
+<p><span m="357895">This is, if you were to replace 1 plus the square root</span> <span m="361125">of 5 over 2 with x, this is just x plus x squared plus x</span> <span m="364877">cubed plus dot dot dot dot dot.</span> </p>
+<p><span m="366925">It's just a geometric series with constant ratio--</span> <span m="370835">well, x .</span> </p>
+<p><span m="371655">1 plus the square root of 5 over 2.</span> </p>
+<p><span m="373795">So we know exactly when geometric series converge.</span> </p>
+<p><span m="378545">They converge exactly when the constant ratio is between</span> <span m="384435">minus 1 and 1.</span> </p>
+<p><span m="385665">So bigger than minus 1 and less than 1.</span> </p>
+<p><span m="388285">So this series converges, then, if and only if 1 plus</span> <span m="391605">the square root of 5 over 2 is between minus 1 and 1.</span> </p>
+<p><span m="394555">So then we just have to think about, is this number between</span> <span m="397335">minus 1 and 1.</span> </p>
+<p><span m="399015">And OK.</span> </p>
+<p><span m="400005">So this is not that hard to do.</span> </p>
+<p><span m="401435">Square root of 5 is bigger than 2, so 1 plus the square</span> <span m="404555">root of 5 is bigger than 3, so 1 plus the square root of 5</span> <span m="407135">over 2 is bigger than 3/2.</span> </p>
+<p><span m="409495">So 3/2 is bigger than 1.</span> </p>
+<p><span m="411175">So this common ratio in this series is bigger than 1.</span> </p>
+<p><span m="416625">So the terms of this series are blowing ip.</span> </p>
+<p><span m="419665">You know, when you, when n gets bigger and bigger, you're</span> <span m="422105">adding larger and larger numbers here.</span> </p>
+<p><span m="423735">This is blowing up.</span> </p>
+<p><span m="424575">It's a divergent geometric series.</span> </p>
+<p><span m="426825">So this series does not converge.</span> </p>
+<p><span m="428210">So b, I'll just write that here.</span> </p>
+<p><span m="434605">B diverges, because it's geometric with common ratio</span> <span m="447465">bigger than 1.</span> </p>
+<p><span m="448515">So that's the reason that part B diverges.</span> </p>
+<p><span m="451925">Finally, we're left with question C.</span> </p>
+<p><span m="454284">So I'm going to come over and write it over here again, so</span> <span m="458365">we can see it.</span> </p>
+<p><span m="458885">So part C asks the sum for n equals 1 to infinity of log n</span> <span m="469425">over n squared.</span> </p>
+<p><span m="473360">So this one's a little trickier, and it requires a</span> <span m="475305">little bit more thought.</span> </p>
+<p><span m="475941">The thing to-- do let's start just by--</span> <span m="482490">it can't be solved just by a straightforward application of</span> <span m="486475">the limit comparison test that we've learned.</span> </p>
+<p><span m="490775">So we need to think a little bit more about what ways could</span> <span m="493905">we solve it.</span> </p>
+<p><span m="495725">So one thing to remember here is, is we should think about,</span> <span m="499435">what are the magnitudes of these things?</span> </p>
+<p><span m="501485">So we know that sum 1 over n squared converges.</span> </p>
+<p><span m="504565">But log n is a function that grows.</span> </p>
+<p><span m="507675">So this individual term is bigger than 1 over n squared.</span> </p>
+<p><span m="511445">So we can't just compare it to 1 over n squared.</span> </p>
+<p><span m="515655">But log n grows very, very slowly.</span> </p>
+<p><span m="518044">How slowly?</span> </p>
+<p><span m="518914">Well, it grows more slowly than any power of x.</span> </p>
+<p><span m="521945">Right?</span> </p>
+<p><span m="523475">So, or-- sorry-- any power of n in this case, because the</span> <span m="525235">variable is n.</span> </p>
+<p><span m="526755">So if you remember, we know, we've shown, that the limit of</span> <span m="537785">ln x over x to the p as x goes to infinity is equal to 0 for</span> <span m="550045">any positive p.</span> </p>
+<p><span m="553475">So ln, log n, ln n, is going to infinity, but it's going to</span> <span m="559455">infinity much slower than any power of n.</span> </p>
+<p><span m="564575">In this case.</span> </p>
+<p><span m="565425">Or x, down here.</span> </p>
+<p><span m="567695">So OK.</span> </p>
+<p><span m="568735">So what does that mean?</span> </p>
+<p><span m="569895">Well, one thing you could do, is you could say, oh, OK.</span> </p>
+<p><span m="572105">So ln n over n, that's getting really small.</span> </p>
+<p><span m="576015">And then what we're left with is 1 over n.</span> </p>
+<p><span m="578295">So you can say, OK.</span> </p>
+<p><span m="579085">So this is much smaller than 1 over n.</span> </p>
+<p><span m="582065">The problem is that the sum 1 over n diverges.</span> </p>
+<p><span m="585515">Yeah?</span> </p>
+<p><span m="585865">So that doesn't help us, really, right?</span> </p>
+<p><span m="587665">So we've shown this is bigger than the sum 1 over n squared,</span> <span m="592655">which converges, and it's smaller than the sum 1 over n,</span> <span m="596465">which diverges.</span> </p>
+<p><span m="597605">But that still doesn't tell us, you know?</span> </p>
+<p><span m="599195">It could be something that, you know, there's a lot of</span> <span m="602625">room bigger than a particular convergent series, and smaller</span> <span m="606425">than a particular divergent series.</span> </p>
+<p><span m="608165">And in particular, there are both convergent and divergent</span> <span m="610835">series in between.</span> </p>
+<p><span m="611985">So we still need, we need either something that</span> <span m="614485">converges that our thing is less than, or we need</span> <span m="618255">something that diverges that our thing is bigger than.</span> </p>
+<p><span m="621595">Right?</span> </p>
+<p><span m="621795">If we can bound our series above by something convergent,</span> <span m="624995">then our series converges.</span> </p>
+<p><span m="626505">Because [UNINTELLIGIBLE]</span> <span m="627285">has positive terms. This is important.</span> </p>
+<p><span m="629365">Or if we can bound it below by something that diverges, then</span> <span m="632425">we would know it diverges.</span> </p>
+<p><span m="633865">And so far, we haven't been able to do that.</span> </p>
+<p><span m="637125">But maybe we can think of a-- so I said we could write this,</span> <span m="641990">a second ago, I said we could write ln n over n squared is</span> <span m="646525">equal to ln n and over n times 1 over n.</span> </p>
+<p><span m="651455">So that was what we just said a minute ago, at which we</span> <span m="655315">showed is eventually less than 1 over n.</span> </p>
+<p><span m="660255">So this is true, but it wasn't useful, because the sum 1 over</span> <span m="663185">n diverges.</span> </p>
+<p><span m="664865">But maybe we can, we can do something even</span> <span m="667105">a little more tricky.</span> </p>
+<p><span m="668835">Because here we saw that x, we could use it in the base, we</span> <span m="673575">could use any power of the variable, any positive power.</span> </p>
+<p><span m="677385">So here, we tried it with the power n to the 1.</span> </p>
+<p><span m="680105">We tried to split this 2 as 1 plus 1, and we kept one of the</span> <span m="683295">n's to knock out the log n, and we kept the</span> <span m="685975">other n over here.</span> </p>
+<p><span m="687655">But we don't need a whole power of n to</span> <span m="690095">knock out the log n.</span> </p>
+<p><span m="691245">Any positive power of n would do.</span> </p>
+<p><span m="695215">So in particular, we could split this using, say, just a</span> <span m="698795">small power of n, even smaller than the first power here, and</span> <span m="702585">leave more of it over here.</span> </p>
+<p><span m="704085">So we also know, we also have that ln n over n squared is</span> <span m="714295">equal to, for example, ln n over--</span> <span m="719215">well, you know, for example, n to the 1/2 times 1</span> <span m="725265">over n to the 3/2.</span> </p>
+<p><span m="729215">And now we know that ln n over n to the 1/2 goes to 0 as n</span> <span m="735015">gets large.</span> </p>
+<p><span m="735815">So this is thing is getting smaller</span> <span m="737645">and smaller and smaller.</span> </p>
+<p><span m="738685">So as this gets smaller, we have that this has to be less</span> <span m="743555">than 1 over n to the 3/2.</span> </p>
+<p><span m="747165">So this thing that we're adding up here is smaller than</span> <span m="751275">1 over n to the 3/2.</span> </p>
+<p><span m="753185">Well, what's the significance of that?</span> </p>
+<p><span m="754585">Well, we know 1 over n to the 3/2, that series converges.</span> </p>
+<p><span m="758635">Yeah?</span> </p>
+<p><span m="759365">We know the sum 1 over n to the 3/2 from n equals 1 to</span> <span m="767025">infinity converges, because 3/2 is bigger than 1.</span> </p>
+<p><span m="774085">OK?</span> </p>
+<p><span m="774655">So what does that mean?</span> </p>
+<p><span m="775405">Well, we have our series, and we've shown that the terms of</span> <span m="779165">our series are eventually bounded below 1</span> <span m="782695">over n to the 3/2.</span> </p>
+<p><span m="784325">And we know that the sum of 1 over n to the 3/2 converges,</span> <span m="788185">so our series is bounded above by a convergent series.</span> </p>
+<p><span m="792035">So whenever you have a series bounded above, a series of</span> <span m="794545">non-negative terms bounded above, by a convergent series,</span> <span m="797885">that means your series also has to converge.</span> </p>
+<p><span m="801495">OK, so this converges.</span> </p>
+<p><span m="804423">So it converges by a comparison</span> <span m="807265">to this other series.</span> </p>
+<p><span m="808375">Using this cute trick that we can replace a log with any</span> <span m="813015">small positive power of n that happens to be convenient.</span> </p>
+<p><span m="816875">And of course, if you wanted to, maybe you could have made</span> <span m="819325">this 1/2 a 1/10 and that would have been fine, or you</span> <span m="822575">could've even made it a 9/10, and then you would here be</span> <span m="825755">left with n to the 11/10, and that would still be OK.</span> </p>
+<p><span m="829315">Because that would be 11/10, and 11/10, then it would still</span> <span m="833065">be bigger than 1.</span> </p>
+<p><span m="834575">All right.</span> </p>
+<p><span m="835935">So this is a nice use of a, of a comparison test. We didn't</span> <span m="839845">use exactly the limit comparison test as it was</span> <span m="842335">described in lecture, but it's a very closely related process</span> <span m="846255">that we went through to show that this second series--</span> <span m="850055">sorry, this third series--</span> <span m="851575">also converges.</span> </p>
+<p><span m="853515">So I'll end there.</span> </p>
+</div>
+        <div id="vid_index" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Free Downloads</h2>
+<h3 class="subsubhead">Video</h3>
+<ul>
+<li>iTunes U (<a href="http://itunes.apple.com/us/podcast/comparison-tests/id414308064?i=90320229">MP4 - 33MB</a>)</li>
+<li>Internet Archive (<a href="http://www.archive.org/download/MIT18_01SCF10/MIT18_01SCF10Rec_73_300k.mp4">MP4 - 33MB</a>)</li>
+</ul>
+<br><h3 class="subsubhead">Caption</h3>
+<ul><li>English-US (<a href="../../../../../contents/unit-5-exploring-the-infinite/part-b-taylor-series/session-95-series-comparison/comparison-tests/1424365.srt">SRT</a>)</li></ul>
+</div>
+    
+   </div>  
+
+
+
+      					 
+        <div class="" id="parent-fieldname-bottom_html_area">
+            
+            
+        </div>
+    
+                    </main><!--Course_inner_chip tag close -->
+</div>
+<!--Course_wrapper tag close --> 
+            </div>
+<!--left tag close -->
+            <aside id="right"><!--Begin Right Portion --><div>
+    
+
+
+
+</div>
+
+                	<div>
+    
+
+
+
+</div>
+
+
+        <div class="" id="parent-fieldname-rsi_top_html_area">
+            
+            
+        </div>
+    
+
+<!-- RSI google ad space-->
+
+
+<div id="google_ads">    
+    <script type="text/javascript" src="https://partner.googleadservices.com/gampad/google_service.js"></script><script type="text/javascript">GS_googleAddAdSenseService("ca-pub-6588555046597237");GS_googleEnableAllServices();</script><script type="text/javascript">GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_A_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_B_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_C_DL");</script><script type="text/javascript">GA_googleFetchAds();</script><script language="javascript" type="text/javascript">
+GA_googleAddAttr("TYPE","HOUSE");
+GA_googleAddAttr("DEPARTMENT","18");
+GA_googleAddAttr("CRS_BEG2","01");
+GA_googleAddAttr("CRS_END","SC");
+GA_googleAddAttr("SESSION","F");
+GA_googleAddAttr("YEAR","10");
+</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_A_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_B_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_C_DL");</script>
+</div>
+
+<!-- End RSI ads--> 
+
+<div>
+    
+
+
+
+</div>
+
+            </aside><!--Right div close --><div class="clear"></div> 
+        </div>
+<!--grid tag close --> 
+      </div>
+		
+		<footer id="bottom"><div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="footer">
+<nav aria-label="Footer"><nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses"><span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul></nav><div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators"><span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">Highlights for High School</a></li>
+    <li><a href="http://k12videos.mit.edu" aria-label="External Link: MIT+K12 Videos">MIT+K12 Videos</a></li>
+    <li><a href="http://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+</ul></nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate"><span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/give/shop-ocw/">Shop OCW</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul></nav><div class="grid_2" id="foot-c4">
+<nav aria-labelledby="f-about"><span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    <li><a href="https://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>
+</ul></nav><!--about--><nav aria-labelledby="f-tools"><span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="../../../../../common/jsp/feedback.htm">Contact Us</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="../../../../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul></nav><!--tools-->
+</div>
+</nav><aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5"><span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script></div>
+</aside><div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare makes the materials used in the teaching of almost all of MIT's subjects available on the Web, free of charge. With more than 2,400 courses available, OCW is delivering on the promise of open sharing of knowledge. <a href="http://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;">
+<a href="http://web.mit.edu"><img src="../../../../../common/images/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="http://odl.mit.edu"><img src="https://ocw.mit.edu/images/logo_odl.png" alt="MIT Office of Digital Learning logo and name." style="width: 289; height: 54; vertical-align: top;"></a><a href="http://www.oeconsortium.org/"><img src="https://ocw.mit.edu/images/logo_oec.png" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../../../../../common/images/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; margin-left: 13px;"></a>
+<p class="copyright">© 2001–2018<br>
+Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="../../../../../common/terms/index.htm" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+</body>
+</html>
