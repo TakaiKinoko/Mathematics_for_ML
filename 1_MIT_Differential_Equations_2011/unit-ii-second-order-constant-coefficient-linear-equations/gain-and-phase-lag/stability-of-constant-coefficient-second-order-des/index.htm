@@ -1,0 +1,1131 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title>Stability of Constant Coefficient Second Order DE's | Gain and Phase Lag | Unit II: Second Order Constant Coefficient Linear Equations | Differential Equations | Mathematics | MIT OpenCourseWare</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="18-03sc-differential-equations-fall-2011" name="WT.cg_n">
+<meta content="Stability of Constant Coefficient Second Order DE's" name="WT.cg_s">
+<meta content="" name="Description">
+<meta content="Mattuck, Arthur" name="Author">
+<meta content="Miller, Haynes" name="Author">
+<meta content="Orloff, Jeremy" name="Author">
+<meta content="Lewis, John" name="Author">
+<meta content="18.03SC,18.03,Ordinary Differential Equations,ODE,modeling physical systems,first-order ODE's,Linear ODE's,second order ODE's,second order ODE's with constant coefficients,Undetermined coefficients,variation of parameters,Sinusoidal signals,exponential signals,oscillations,damping,resonance,Complex numbers and exponentials,Fourier series,periodic solutions,Delta functions,convolution,Laplace transform methods,Matrix systems,first order linear systems,eigenvalues and eigenvectors,Non-linear autonomous systems,critical point analysis,phase plane diagrams,Linear Algebra" name="keywords">
+<meta content="18.03SC Differential Equations | Stability of Constant Coefficient Second Order DE's" name="Search_Display">
+<meta content="Differential Equations" itemprop="about">
+<meta content="Linear Algebra" itemprop="about">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/search.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses_new.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.jscrollpane.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/media_tabs.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/scholar2.css">
+<link href="https://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<link rel="canonical" href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des/">
+<link rel="apple-touch-icon" href="../../../../common/images/apple-touch-icon.png">
+<script type="text/javascript" src="../../../../common/scripts/jquery.js"></script><script type="text/javascript" src="../../../../common/scripts/ocw-media-utils-offline.js"></script><script type="text/javascript" src="../../../../common/scripts/ocw-offline.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery.jscrollpane.min.js"></script><script type="text/javascript" src="../../../../common/scripts/expandy.js"></script><script type="text/javascript" src="../../../../common/scripts/bubble-popup-offline.js"></script><script type="text/javascript">
+      $(document).ready(function() {
+        $("#tabs").tabs();
+        IpadScroller();
+      });
+    </script>
+</head>
+<body>
+<div id="fbQuote" name="fbQuote">
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '549343822066688',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v2.11'
+            });
+	        FB.AppEvents.logEvent('Share',1);
+          };
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+</div>
+
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    
+        
+	
+
+        <header id="top"><div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="../../../../common/images/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe">
+<aside class="module" aria-label="Connect with OCW"><table class="social"><tbody><tr>
+<td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="../../../../common/images/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td>
+<a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="../../../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a>   <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="https://ocw.mit.edu/images/icon_twitter.png" alt="Click to visit our Twitter feed."></a>   <a aria-label="YouTube" href="https://www.youtube.com/mitocw"><img src="https://ocw.mit.edu/images/icon_yt.png" alt="Click to visit our YouTube page."></a>   <a aria-label="Open Matters blog on WordPress" href="https://mitopencourseware.wordpress.com/"><img src="https://ocw.mit.edu/images/icon_wp.png" alt="Click to visit our blog on WordPress."></a>
+</td>
+        </tr></tbody></table></aside><nav aria-label="Help Links" class="helplinks"><a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="../../../../common/jsp/feedback.htm">Contact Us</a>   </nav>
+</div>
+<div class="clear"> </div>
+<!--googleon: index-->
+</div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75">
+<div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site"><ul id="menu" role="presentation">
+<li id="menu_home">
+<a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="../../../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+</li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses">
+<a href="#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a">
+<nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul></nav><nav aria-labelledby="mm-collections"><span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    </ul></nav><nav class="col_1b" aria-labelledby="mm-translated-courses"><span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul></nav>
+</div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists"><span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/spanish" aria-label="Spanish">Español / Spanish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul></nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2">
+<a href="#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">OCW Educator Portal</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+        <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">OCW Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">K-12</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://www.k12videos.mit.edu/videos" aria-label="External Link: MIT Plus K12 Videos">MIT+K12 Videos</a></li>
+    </ul>
+<span id="mm-higher-ed" class="nav" aria-hidden="true">Higher Ed</span>
+    <ul>
+<li><a href="https://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_3">
+<a href="#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/give/shop-ocw">Shop OCW</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_4">
+<a href="#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    </ul></nav></div>
+    </li>
+</ul></nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script><div id="search" role="search" class="grid_4 omega">
+    	<table class="search"><tbody><tr>
+<td><div class="searchboxheader"><searchbox-only resultsurl="/search/ocwsearch.htm"></searchbox-only></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br><b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br><b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br><b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br><b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br></span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr></tbody></table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</header><!-- top end --><div id="center_media">
+      	<div id="grid">
+      		<div id="left">
+        		<nav id="breadcrumb_media" aria-label="Breadcrumb"><p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/mathematics">Mathematics</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/index.htm">Differential Equations</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/index.htm">Unit II: Second Order Constant Coefficient Linear Equations</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/index.htm">Gain and Phase Lag</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Stability of Constant Coefficient Second Order DE's
+         
+    
+</p>
+
+            	</nav><div class="clear"></div>
+        		<div id="media_title">
+        		<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Stability of Constant Coefficient Second Order DE's
+        </span>
+    </h1>
+        		</div>
+           		<div class="clear"></div>
+           		<div id="course_wrapper_media">
+           			<nav id="course_nav" aria-label="Course"><script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><ul>
+<li class="">
+			   			<a href="../../../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="syllabus" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menusyllabus'); toggleClass('syllabus'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/syllabus/index.htm" class="">
+		                  Syllabus  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menusyllabus" class="">
+<li class="">
+				 		<a href="../../../../contents/syllabus/meet-the-tas/index.htm" class="">Meet the TAs</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-i-first-order-differential-equations" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-i-first-order-differential-equations'); toggleClass('unit-i-first-order-differential-equations'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-i-first-order-differential-equations/index.htm" class="">
+		                  Unit I: First Order Differential Equations  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-i-first-order-differential-equations" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/conventions-and-preliminary-material/index.htm" class="">Conventions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/basic-de-and-separable-equations/index.htm" class="">Basic DE's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/geometric-methods/index.htm" class="">Geometric Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/numerical-methods/index.htm" class="">Numerical Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-linear-odes/index.htm" class="">Linear ODE's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/solution-by-integrating-factors/index.htm" class="">Integrating Factors</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/complex-arithmetic-and-exponentials/index.htm" class="">Complex Arithmetic</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/sinusoidal-functions/index.htm" class="">Sinusoidal Functions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-constant-coefficient-linear-odes/index.htm" class="">Constant Coefficients</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/exponential-input-gain-and-phase-lag/index.htm" class="">Exponential Input</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-autonomous-differential-equations/index.htm" class=""> Autonomous Equations</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/linear-vs.-nonlinear/index.htm" class="">Linear vs. Nonlinear</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/exam-1/index.htm" class="">Exam 1</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-ii-second-order-constant-coefficient-linear-equations" class="mC">
+						<a href="#" class="" onclick="toggleMenu('menuunit-ii-second-order-constant-coefficient-linear-equations'); toggleClass('unit-ii-second-order-constant-coefficient-linear-equations'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Collapse Menu" title="Collapse Menu"></a>
+		                <a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/index.htm" class="">
+		                  Unit II: Second Order Constant Coefficient Linear Equations  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-ii-second-order-constant-coefficient-linear-equations" class="selected">
+<li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/modes-and-the-characteristic-equation/index.htm" class="">Characteristic Equation</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm" class="">Damped Oscillators</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/exponential-response/index.htm" class="">Exponential Response</a>
+		            </li>
+		            <li class="selected">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/index.htm" class="selected">Gain and Phase Lag</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/undetermined-coefficients/index.htm" class="">Undetermined Coefficients</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/linear-operators-linear-time-invariance/index.htm" class="">Linear Operators</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/pure-resonance/index.htm" class="">Pure Resonance</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/frequency-response-and-practical-resonance/index.htm" class="">Frequency Response</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/applications-lrc-circuits-damping-ratio/index.htm" class="">Applications</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/exam-2/index.htm" class="">Exam 2</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-iii-fourier-series-and-laplace-transform" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-iii-fourier-series-and-laplace-transform'); toggleClass('unit-iii-fourier-series-and-laplace-transform'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/index.htm" class="">
+		                  Unit III: Fourier Series and Laplace Transform  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-iii-fourier-series-and-laplace-transform" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/index.htm" class="">Fourier Series: Basics</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/operations-on-fourier-series/index.htm" class="">Operations</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm" class="">Periodic Input</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/step-and-delta-functions-integrals-and-generalized-derivatives/index.htm" class="">Step and Delta</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/unit-step-and-unit-impulse-response/index.htm" class="">Impulse Response</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/convolution/index.htm" class="">Convolution</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/laplace-transform-basics/index.htm" class="">Laplace Transform</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/partial-fractions-and-inverse-laplace-transform/index.htm" class="">Partial Fractions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/laplace-transform-solving-initial-value-problems/index.htm" class="">Solving IVP's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/transfer-system-and-weight-functions-greens-formula/index.htm" class="">Transfer Functions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/poles-amplitude-response-connection-to-erf/index.htm" class="">Poles</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/exam-3/index.htm" class="">Exam 3</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-iv-first-order-systems" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-iv-first-order-systems'); toggleClass('unit-iv-first-order-systems'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-iv-first-order-systems/index.htm" class="">
+		                  Unit IV: First-order Systems  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-iv-first-order-systems" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/linear-systems-introduction/index.htm" class="">Linear Systems</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/matrix-methods-eigenvalues-and-normal-modes/index.htm" class="">Matrix Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/qualitative-behavior-phase-portraits/index.htm" class="">Phase Portraits</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/matrix-exponentials/index.htm" class="">Matrix Exponentials</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/nonlinear-systems/index.htm" class="">Nonlinear Systems</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/linearization-near-critical-points/index.htm" class="">Linearization</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/limitations-of-the-linear-limit-cycles-and-chaos/index.htm" class="">Limit Cycles and Chaos</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/final-exam/index.htm">
+		                  Final Exam  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+<!--Left Nav Ends --></nav><main id="course_inner_media" aria-labelledby="media_title"><p><img src="../../../../common/images/scholar_bar_chp.png" style="width: 543px; height: 32px; border: 1px solid #790835; margin-top: -16px;" alt="OCW Scholar"></p>
+      					 
+        <div class="" id="parent-fieldname-text">
+            
+            
+        </div>
+    
+      					     
+    
+    
+
+
+
+<script type="text/javascript">var caption_embed_1 ={'English - US': '/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des/eyNm7XGJr4s.srt'}</script><div id="media-embed">
+         <div class="attention_message" id="embed_1">
+<p>Flash and JavaScript are required for this feature.</p>
+<p>Download the video from <a href="https://itunes.apple.com/us/itunes-u/id493274885">iTunes U</a> or the <a href="http://www.archive.org/download/MIT18.03S06/mit-ocw-18.03-lec12-07mar2003-220k_512kb.mp4">Internet Archive</a>.</p>
+</div>
+     </div>
+    
+     <script type="text/javascript">ocw_embed_chapter_media('embed_1', 'https://www.youtube.com/v/eyNm7XGJr4s', 'youtube', '/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des', 'https://img.youtube.com/vi/eyNm7XGJr4s/0.jpg',2400,2783, 'https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des/eyNm7XGJr4s.srt')</script><div id="transcript1"></div>
+				 <script type="text/javascript">createThreePlayParams(2, 703522, "embed_1", 2400, 2783)</script><script type="text/javascript">
+		window.onload=function(){
+		init();
+		
+		}
+		var tabLinks = new Array();
+		var contentDivs = new Array();
+		function init() {
+		  // Grab the tab links and content divs from the page
+		  var tabListItems = document.getElementById('tabs').childNodes;
+		  for ( var i = 0; i < tabListItems.length; i++ ) {
+			if ( tabListItems[i].nodeName == "LI" ) {
+			  var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+			  var id = getHash( tabLink.getAttribute('href') );
+			  tabLinks[id] = tabLink;
+			  contentDivs[id] = document.getElementById( id );
+			}
+		  }
+		  // Assign onclick events to the tab links, and
+		  // highlight the first tab
+		  var i = 0;
+		  for ( var id in tabLinks ) {
+			tabLinks[id].onclick = showTab;
+			tabLinks[id].onfocus = function() { this.blur() };
+			if ( i == 0 ) tabLinks[id].className = 'selected';
+			i++;
+		  }
+		  // Hide all content divs except the first
+		  var i = 0;
+		  for ( var id in contentDivs ) {
+			if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+			i++;
+		  }
+		}
+		function showTab() {
+		  var selectedId = getHash( this.getAttribute('href') );
+		  // Highlight the selected tab, and dim all others.
+		  // Also show the selected content div, and hide all others.
+		  for ( var id in contentDivs ) {
+			if ( id == selectedId ) {
+			  tabLinks[id].className = 'selected';
+			  contentDivs[id].className = 'tabContent';
+			} else {
+			  tabLinks[id].className = '';
+			  contentDivs[id].className = 'tabContent hide';
+			}
+		  }
+		  // Stop the browser following the link
+		  return false;
+		}
+		function getFirstChildWithTagName( element, tagName ) {
+		  for ( var i = 0; i < element.childNodes.length; i++ ) {
+			if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		  }
+		}
+		function getHash( url ) {
+		  var hashPos = url.lastIndexOf ( '#' );
+		  return url.substring( hashPos + 1 );
+		}
+ </script><div id="media_tabs">
+     
+        <ul id="tabs">
+<li class="first">
+                <a href="#vid_about" class="selected">Transcript</a>
+            </li>
+            <li class="">
+                <a href="#vid_index" class="">Download this Video</a>
+            </li>
+        </ul>
+<div id="vid_about" itemprop="description" class="tabContent">
+<ul><li><a class="transcript-link" title="Open in a new window." alt="Open in a new window." style="text-decoration: none; font-size: 1.0em;" target="_blank" text-decoration: none font-size: href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des/eyNm7XGJr4s.pdf"> Download English-US transcript (PDF)</a></li></ul>
+<p><span m="7000">We are going to start today in a serious way on the</span> <span m="12000">inhomogenous equation, second-order linear</span> <span m="17000">differential, I'll simply write it out</span> <span m="22000">instead of writing out all the words which go with it.</span> </p>
+<p><span m="28000">So, such an equation looks like, the second-order equation</span> <span m="35000">is going to look like y double prime plus p of x,</span> <span m="40000">t, x plus q of x times y. Now, up to now the right-hand</span> <span m="47000">side has been zero. So, now we are going to make it</span> <span m="53000">not be zero. So, this is going to be f of x.</span> </p>
+<p><span m="57000">In the most frequent</span> <span m="60000">applications, x is time.</span> </p>
+<p><span m="62000">x is usually time, often, but not always.</span> </p>
+<p><span m="68000">So, maybe just for today, I will use X in talking about</span> <span m="73000">the general theory. And, from now on,</span> <span m="76000">I'll probably make X equal time because that's what is most of</span> <span m="82000">the time in the applications. So, this is the part we've been</span> <span m="87000">studying up until now. It has a lot of names.</span> </p>
+<p><span m="91000">It's input, signal, commas between those,</span> <span m="95000">a driving term, or sometimes it's called the</span> <span m="99000">forcing term. You'll see all of these in the</span> <span m="104000">literature, and it pretty much depends upon what course you're</span> <span m="108000">sitting at, what the professor habitually calls it.</span> </p>
+<p><span m="112000">I will try to use all these terms now and then,</span> <span m="115000">probably most often I will lapse into input as the most</span> <span m="119000">generic term, suggesting nothing in</span> <span m="121000">particular, and therefore, equally acceptable or</span> <span m="125000">unacceptable to everybody. The response,</span> <span m="129000">the solution, then, the solution as you know</span> <span m="135000">is then called the response. The response,</span> <span m="140000">sometimes it's called the output.</span> </p>
+<p><span m="144000">I think I'll stick pretty much with response.</span> </p>
+<p><span m="151000">So, I'm using pretty much the same terminology we use for</span> <span m="155000">studying first-order equations. Now, as you will see,</span> <span m="160000">the reason we had to study the homogeneous case first was</span> <span m="165000">because you cannot solve this without knowing the homogeneous</span> <span m="170000">solutions. So, that's the inhomogeneous</span> <span m="173000">case. But the homogeneous one,</span> <span m="176000">the corresponding homogeneous thing, y double prime plus p of</span> <span m="181000">x y prime plus q of x times y equals zero</span> <span m="186000">is an essential part of the solution to this</span> <span m="191000">equation. That's called,</span> <span m="195000">therefore, it has names. Now, unfortunately,</span> <span m="199000">it doesn't have a single name. I don't know what to call it,</span> <span m="204000">but I think I'll probably call it the associated homogeneous</span> <span m="210000">equation, or ODE, the associated homogeneous</span> <span m="214000">equation, the one associated to the guy on the left.</span> </p>
+<p><span m="220000">It's also called the reduced equation by some people.</span> </p>
+<p><span m="224000">There is some other term for it, which escapes me totally,</span> <span m="228000">but what the heck. Now, its solution has a name.</span> </p>
+<p><span m="232000">So, its solution, of course, doesn't depend on</span> <span m="235000">anything in particular, the general solution,</span> <span m="238000">because the right-hand side is always zero.</span> </p>
+<p><span m="243000">So, its solution, we know can be written as y</span> <span m="246000">equals in the form c1 y1 plus c2 y2,</span> <span m="250000">where y1 and y2 are any two independent solutions of that,</span> <span m="254000">and then c1's and c2's are arbitrary constants.</span> </p>
+<p><span m="257000">Now, what you are looking at this equation,</span> <span m="260000">you're going to need this also. And therefore,</span> <span m="264000">it has a name. It has various names.</span> </p>
+<p><span m="266000">Sometimes there is a subscript, c, there.</span> </p>
+<p><span m="271000">Sometimes there's a subscript, h.</span> </p>
+<p><span m="274000">Sometimes there's no subscript at all, which is the most</span> <span m="279000">confusing of all. But, anyway,</span> <span m="282000">what's the name given to it? Well, there is no name.</span> </p>
+<p><span m="287000">Many books call it the solution to the associated homogeneous</span> <span m="293000">equation. That's maximally long.</span> </p>
+<p><span m="296000">Your book calls it the complementary solution.</span> </p>
+<p><span m="302000">Many people call it that, and many will look at you with</span> <span m="306000">a blank, who know differential equations very well,</span> <span m="310000">and will not have the faintest idea what you're talking about.</span> </p>
+<p><span m="314000">If you call it (y)h, then you are thinking of it as</span> <span m="318000">the solution; the h is for homogeneous to</span> <span m="321000">indicate it's the solution. So, it's the solution to the,</span> <span m="326000">I'm not going to write that. You put it in her books if you</span> <span m="330000">like writing. Write solution to the</span> <span m="333000">associated homogeneous equation, y(h).</span> </p>
+<p><span m="336000">But, it's all the same thing. Now, or the solution to the</span> <span m="341000">reduced equation, I see I have in my notes.</span> </p>
+<p><span m="345000">Okay, good, the solution to the reduced equation,</span> <span m="348000">too. Okay, now, the examples,</span> <span m="350000">there are, of course, two classical examples,</span> <span m="353000">of which you know one. But, use them as the model for</span> <span m="357000">what solutions of these things should look like and how they</span> <span m="362000">should behave. So, the model you know already</span> <span m="366000">is the one, I won't make the leading coefficient one because</span> <span m="371000">it usually isn't, is the one, m x double prime,</span> <span m="375000">so t is the independent variable,</span> <span m="378000">plus b x prime plus k x equals f of t.</span> </p>
+<p><span m="383000">That's the spring-mass system,</span> <span m="386000">the spring-mass-dashpot system. Mass, the damping constant and</span> <span m="392000">the spring constant, except up to now,</span> <span m="395000">it's always been zero here. What does this f of t</span> <span m="400000">represent? Well, if you think of the way</span> <span m="403000">in which I derived the equation, the mx, that was the Newton's</span> <span m="409000">law. That's the acceleration.</span> </p>
+<p><span m="411000">So, it's the acceleration, the mass times the</span> <span m="415000">acceleration. By Newton's law,</span> <span m="417000">this is equal to the imposed force on the little mass truck.</span> </p>
+<p><span m="424000">Okay, you got that truck, there.</span> </p>
+<p><span m="426000">I'm not going to draw the truck for the nth time.</span> </p>
+<p><span m="429000">You'll have to imagine it. So, here's our truck.</span> </p>
+<p><span m="433000">Okay, forces are acting on it. Remember, the forces were</span> <span m="437000">minus kx. That came from the spring.</span> </p>
+<p><span m="440000">There was a force, minus b x prime.</span> </p>
+<p><span m="443000">That came from the dashpot, the damping force.</span> </p>
+<p><span m="446000">So, this other guy is f of t.</span> </p>
+<p><span m="450000">What's this? This is the external force,</span> <span m="452000">which is acting out. In other words,</span> <span m="454000">instead of the little truck going back and forth and doing</span> <span m="458000">its own thing all by itself, here's someone with an</span> <span m="461000">electromagnet, and the mass it's carrying is a</span> <span m="464000">big pile of iron ore. You're turning it on and off,</span> <span m="467000">and pulling that thing from afar where nobody can see it.</span> </p>
+<p><span m="471000">So, this is the external force. Now, think, that is the model</span> <span m="475000">you must have in your mind of how these equations are treated.</span> </p>
+<p><span m="480000">In other words, when f of t is zero,</span> <span m="483000">the system is passive. There is no external force on</span> <span m="487000">it when this is zero. The system is sitting,</span> <span m="490000">and just doing what it wants to do, all by itself.</span> </p>
+<p><span m="494000">You wanted up by giving it an initial push,</span> <span m="497000">and putting its initial position somewhere.</span> </p>
+<p><span m="500000">But after that, you lay your hands off.</span> </p>
+<p><span m="503000">The system then just passively responds to its initial</span> <span m="507000">conditions and does what it wants.</span> </p>
+<p><span m="511000">The other model is that you don't let it respond the way it</span> <span m="515000">wants to. You force it from the outside</span> <span m="517000">by pushing it with an external force.</span> </p>
+<p><span m="520000">Now, those are clearly two entirely different problems:</span> <span m="524000">what it does by itself, or what it does when it's acted</span> <span m="528000">on from outside. And, when I explained to you</span> <span m="531000">how the thing is to be solved, you have to keep in mind those</span> <span m="535000">two models. So, this is the forced system.</span> </p>
+<p><span m="540000">I'll just use the word, forced system,</span> <span m="542000">that's where f of t is not zero, versus the passive</span> <span m="547000">system where there is no external applied force.</span> </p>
+<p><span m="551000">The passive system, the forced system,</span> <span m="554000">now, you have to both, even if you wanted to solve the</span> <span m="558000">forced system, the way the system would behave</span> <span m="562000">if nothing would be done to it from the outside is nonetheless</span> <span m="567000">going to be an important part of the solution.</span> </p>
+<p><span m="572000">And, I won't be able to give you that solution without</span> <span m="575000">knowing this also. Now, I'd like to give you the</span> <span m="578000">other model very rapidly because it's in your book.</span> </p>
+<p><span m="582000">It's in the problems I have to give you.</span> </p>
+<p><span m="585000">You know, it's part of everybody's culture,</span> <span m="588000">whether they like it or not. So, that's example number one.</span> </p>
+<p><span m="592000">Example number two, which follows the differential</span> <span m="595000">equation just as perfectly as the spring-mass-dashpot system</span> <span m="599000">is the simple electric circuit. The inductance,</span> <span m="604000">you don't know yet what an inductance is,</span> <span m="608000">officially, but you will, a resistance,</span> <span m="611000">sorry, that's okay, put the capacitance up there,</span> <span m="615000">resistance, and then maybe a thing.</span> </p>
+<p><span m="618000">So, this is a resistance. I think you know these symbols.</span> </p>
+<p><span m="624000">By now, you certainly know the system for capacitance.</span> </p>
+<p><span m="628000">What I mean when I say C is the capacitance, you may not know</span> <span m="634000">yet what L is. That's called the inductance.</span> </p>
+<p><span m="639000">So, this is something called a coil because it looks like one.</span> </p>
+<p><span m="643000">L is what's called its inductance.</span> </p>
+<p><span m="645000">And, the differential equation, there are two differential</span> <span m="650000">equations which can be used in this.</span> </p>
+<p><span m="652000">They are essentially the same. One is simply the derivative of</span> <span m="656000">the other. Both differential equations</span> <span m="659000">come from Kirchhoff's voltage law, that the sum of the voltage</span> <span m="664000">drops as you move around the circuit --</span> <span m="668000">-- has to be zero because otherwise, I don't have to,</span> <span m="671000">that's because of somebody's law, Kirchhoff,</span> <span m="674000">with two h's. The sum of the voltage drops to</span> <span m="677000">zero, and now you know the voltage drop across this,</span> <span m="681000">and you know the voltage drop across that because you learned</span> <span m="685000">in 8.02. You will, one day,</span> <span m="687000">learn the voltage drop across this.</span> </p>
+<p><span m="689000">But, I already know it. It's Li.</span> </p>
+<p><span m="692000">So, i is the current. I'll write this thing in its</span> <span m="697000">primitive form first. So, i is the current that's</span> <span m="702000">flowing in the circuit. q is the charge on the</span> <span m="707000">capacitance. So, the voltage drop across the</span> <span m="711000">coil is L times i. The voltage shop across the,</span> <span m="717000">Li prime, the voltage drop across the</span> <span m="722000">resistance is, well, you know that.</span> </p>
+<p><span m="727000">And, the voltage shop across the capacitance is q</span> <span m="730000">divided by C. And so, that's equal to,</span> <span m="733000">well, it's equal to zero, except if there's a battery</span> <span m="736000">here or something generating a voltage drop,</span> <span m="739000">so, let's call that E is a generic word.</span> </p>
+<p><span m="741000">E could be a battery. It could be a source of</span> <span m="744000">alternating current, something like that.</span> </p>
+<p><span m="747000">But, there's a voltage drop across it, and I'm giving E the</span> <span m="751000">name of the voltage drop. So, and then there's the</span> <span m="755000">question of the signs, which I know I'll never</span> <span m="758000">understand. But, let's assume you've chosen</span> <span m="761000">the sign convention so that this comes out nicely on the</span> <span m="764000">right-hand side. So, this might be varying</span> <span m="767000">sinusoidally, in which case you'd have source</span> <span m="770000">of alternating current. Or, it might be constant,</span> <span m="773000">in which that would be a battery, a little dry cell</span> <span m="776000">giving you direct current of a constant voltage,</span> <span m="779000">stuff like that. So, you could make this minus</span> <span m="783000">if you want, but everything will have the wrong signs,</span> <span m="787000">so don't do it. Now, this doesn't look like</span> <span m="789000">what it's supposed to look like because it's got q and i.</span> </p>
+<p><span m="793000">So, the final thing you have to know is that q prime is</span> <span m="797000">equal to i. The rate at which that charge</span> <span m="799000">leaves the condenser and hurries around the circuit to find its</span> <span m="803000">little soul mate on the other side is the current that's</span> <span m="807000">flowing in the circuit. That's why current flows,</span> <span m="810000">except nothing really happens. Electrons just push on each</span> <span m="815000">other, and they stay where they are.</span> </p>
+<p><span m="817000">I don't understand this at all. So, if I differentiate this,</span> <span m="822000">you can do two things. Either you could integrate i,</span> <span m="826000">and expressed the thing entirely in terms of q,</span> <span m="830000">or you can differentiate it, and express everything in terms</span> <span m="834000">of i. Your book does nicely both,</span> <span m="837000">does not take sides. So, let's differentiate it,</span> <span m="842000">and then it will look like L i double prime plus R i prime plus</span> <span m="846000">i divided by C equals,</span> <span m="849000">and now, watch out, you have now not the</span> <span m="852000">electromotive force, but its derivative.</span> </p>
+<p><span m="855000">So, if you were so unfortunate as to put a little dry cell</span> <span m="859000">there, now you've got nothing, and you've got the homogeneous</span> <span m="864000">case. That's okay.</span> </p>
+<p><span m="865000">Where are the erasers? One eraser?</span> </p>
+<p><span m="868000">I don't believe this.</span> </p>
+<p><span m="883000">So, there's the equation. There are our two equations.</span> </p>
+<p><span m="887000">Why don't we put them up in colored chalk.</span> </p>
+<p><span m="890000">There's the spring equation. And, here's the equation that</span> <span m="894000">governs the current, for how the current flows in</span> <span m="898000">that circuit. And now, you can see,</span> <span m="901000">again, what does it mean? If this is zero,</span> <span m="904000">for example, if I have a dry cell there,</span> <span m="907000">or if I have nothing at all in the circuit, then this</span> <span m="911000">represents the passive circuit. It's just sitting there.</span> </p>
+<p><span m="916000">It wouldn't do anything at all, except that you've put a charge</span> <span m="920000">on the capacitor, and waited, and of course,</span> <span m="922000">when you put a charge on there, it's got a discharge,</span> <span m="926000">and discharges through the circuit, and swings back and</span> <span m="929000">forth a little bit if it's under-damped until finally</span> <span m="932000">towards the end the current dies away to zero.</span> </p>
+<p><span m="936000">But, what usually happens is that you drive this passive</span> <span m="939000">circuit by putting an effective E in it, and then you want to</span> <span m="944000">know how the current behaves. So, those are the two problems,</span> <span m="948000">the passive circuit without an applied electromotive force,</span> <span m="952000">or plugging it into the wall, and wanting it to do things.</span> </p>
+<p><span m="956000">That's the normal state of affairs.</span> </p>
+<p><span m="960000">People don't want passive circuits, they want circuits</span> <span m="963000">which do things because, okay, that's why they want to</span> <span m="967000">solve inhomogeneous equations instead of homogeneous</span> <span m="971000">equations. But as I said,</span> <span m="973000">you have to do the homogeneous case first.</span> </p>
+<p><span m="976000">Okay, you are now officially responsible for this,</span> <span m="980000">and I don't care that you haven't had it in physics yet.</span> </p>
+<p><span m="984000">You will before the next exam. So, I don't even feel guilty.</span> </p>
+<p><span m="990000">But, you're going to start using it on the problem set</span> <span m="994000">right away. So, it's never too soon to</span> <span m="997000">start learning it. Okay, now, the main theorem,</span> <span m="1001000">I now want to go, so that was just examples to</span> <span m="1004000">give you some physical feeling for the sorts of differential</span> <span m="1009000">equations we'll be talking about.</span> </p>
+<p><span m="1012000">I now want to tell you briefly about the key theorem about</span> <span m="1016000">solving the homogeneous equation.</span> </p>
+<p><span m="1019000">So, the main theorem about solving the homogeneous equation</span> <span m="1024000">is, the inhomogeneous equation. So, I'm going to write the</span> <span m="1029000">inhomogeneous equation out. I'm going to make the left-hand</span> <span m="1034000">side a linear operator, and am going to write the</span> <span m="1038000">equation as Ly equals f of x.</span> </p>
+<p><span m="1041000">That's the inhomogeneous equation.</span> </p>
+<p><span m="1043000">So, L is the linear operator, second order because I'm only</span> <span m="1048000">talking about second-order equations.</span> </p>
+<p><span m="1052000">L is a linear operator, and then this is the</span> <span m="1057000">differential equation. So, here's our differential</span> <span m="1063000">equation. It's inhomogeneous because it's</span> <span m="1068000">go the f of x on the right hand side.</span> </p>
+<p><span m="1073000">And, what the theorem says is that the solution has the</span> <span m="1080000">following form, y sub p, I'll explain what that</span> <span m="1085000">is in just a moment, plus y sub c.</span> </p>
+<p><span m="1093000">So, the hypothesis is we've got the linear equation,</span> <span m="1097000">and the conclusion is that that's what its solution looks</span> <span m="1101000">like. Now, you already know what y</span> <span m="1104000">sub c looks like. In other words,</span> <span m="1107000">if I write this out in more detail, it would be i.e.,</span> <span m="1111000">department of fuller explanation, --</span> <span m="1115000">-- the general solution looks like y equals yp,</span> <span m="1118000">and then this thing is going to look like an arbitrary constant</span> <span m="1123000">times y1 plus an arbitrary constant times y2,</span> <span m="1127000">where these are solutions of the homogeneous equation.</span> </p>
+<p><span m="1131000">So, Yc looks like this part, and the yp, what's yp?</span> </p>
+<p><span m="1135000">p stands for particular, the most confusing word in this</span> <span m="1140000">subject. But, you've got at least four</span> <span m="1144000">weeks to learn what it means. Okay, yp is a particular</span> <span m="1150000">solution to Ly equals f of x.</span> </p>
+<p><span m="1154000">Now, I'm not going to explain what particular means.</span> </p>
+<p><span m="1159000">First, I'll chat as if you knew what it meant,</span> <span m="1164000">and then we'll see if you have picked it up.</span> </p>
+<p><span m="1170000">In other words, the procedure for solving this</span> <span m="1173000">equation is composed of two steps.</span> </p>
+<p><span m="1176000">First, to find this part. In other words,</span> <span m="1180000">to find the complementary solution, in other words,</span> <span m="1184000">to do what we've been doing for the last week,</span> <span m="1188000">solve not the equation you are given, but the reduced equation.</span> </p>
+<p><span m="1193000">So, the first step is to find this.</span> </p>
+<p><span m="1196000">The second step is to find yp. Now, what's yp?</span> </p>
+<p><span m="1201000">yp is a particular solution to the whole equation.</span> </p>
+<p><span m="1205000">Yeah, but which one? Well, if it's any one,</span> <span m="1209000">then it's not a particular solution, yeah.</span> </p>
+<p><span m="1212000">I say, unfortunately the word particular here is not being</span> <span m="1217000">used in exactly the same sense in which most people use it in</span> <span m="1222000">ordinary English. It's a perfectly valid way to</span> <span m="1226000">use it. It's just confusing,</span> <span m="1229000">and no one has ever come up with a better word.</span> </p>
+<p><span m="1233000">So, particular means any one solution.</span> </p>
+<p><span m="1238000">Any one will do. Okay, even these have slightly</span> <span m="1245000">different meanings. Any questions about this?</span> </p>
+<p><span m="1251000">I refuse to answer them. [LAUGHTER]</span> <span m="1258000">Now, well, examples of course will make it all clear.</span> </p>
+<p><span m="1263000">But I'd like, first, to prove the theorem,</span> <span m="1268000">to show you how simple it is. It's extremely simple if you</span> <span m="1275000">just use the fact that L is a linear operator.</span> </p>
+<p><span m="1280000">We've got two things to prove. What have we got to prove?</span> </p>
+<p><span m="1286000">Well, I have to prove two statements, first of all,</span> <span m="1292000">that all the yp plus c1 y1 plus c2 y2 are</span> <span m="1299000">solutions. How are we going to prove that?</span> </p>
+<p><span m="1303000">Well, how do you know if something is a solution?</span> </p>
+<p><span m="1306000">Well, you plug it into the equation, and you see if it</span> <span m="1309000">satisfies the equation. Good, let's do it,</span> <span m="1312000">proof. L, I'm going to plug it into</span> <span m="1314000">the equation. That means I calculate L of yp</span> <span m="1316000">plus c1 y1 plus c2 y2.</span> </p>
+<p><span m="1320000">Now, what's the answer? Because this is a linear</span> <span m="1324000">operator, and notice, the argument doesn't use the</span> <span m="1328000">fact that the equation is second order.</span> </p>
+<p><span m="1332000">It immediately generalizes to a linear equation of any order,</span> <span m="1337000">whatever-- 47. Okay, this is L of yp plus L of</span> <span m="1341000">c1 y1 plus c2 y2.</span> </p>
+<p><span m="1345000">Well, what's that? What's L of the complementary</span> <span m="1349000">solution? What does it mean to be the</span> <span m="1354000">complementary solution? It means when you apply the</span> <span m="1357000">operator L to it, you get zero because this</span> <span m="1360000">satisfies the homogeneous equation.</span> </p>
+<p><span m="1363000">So, this is zero. What's L of yp?</span> </p>
+<p><span m="1366000">Well, it was a particular solution to the equation.</span> </p>
+<p><span m="1370000">Therefore, when I plugged it into the equation,</span> <span m="1373000">I must have gotten out on the right-hand side,</span> <span m="1377000">f of x. So, this is since yp is a</span> <span m="1380000">solution to the whole equation. So, what's the conclusion?</span> </p>
+<p><span m="1386000">That, if I take any one of these guys, no matter what c1</span> <span m="1390000">and c2 are, apply the linear operator, L to it,</span> <span m="1393000">the answer comes out to be f of.</span> </p>
+<p><span m="1397000">Therefore, this proves that this shows that these are all</span> <span m="1401000">solutions because that's what it means.</span> </p>
+<p><span m="1404000">Therefore, they satisfy L of y equals f of x.</span> </p>
+<p><span m="1410000">They satisfy the whole inhomogeneous differential</span> <span m="1414000">equation, and that's it. Well, that's only half the</span> <span m="1418000">story. The other half of the story is</span> <span m="1421000">to show that there are no other solutions.</span> </p>
+<p><span m="1425000">Okay, so we got our little u of x coming up again,</span> <span m="1430000">and he thinks he's a solution. Okay, so, to prove there are no</span> <span m="1435000">other solutions, it almost sounds biblical,</span> <span m="1439000">thou shalt have no other solutions before me,</span> <span m="1443000">okay. There are no other solutions</span> <span m="1447000">accept these guys for different values of c1 and c2.</span> </p>
+<p><span m="1450000">Okay, so, u of x is a solution.</span> </p>
+<p><span m="1453000">I have to show that u of x is one of these guys.</span> </p>
+<p><span m="1456000">How am I going to do that? Easy.</span> </p>
+<p><span m="1459000">If it's a solution that, L of u,</span> <span m="1461000">okay, I'm going to drop the x, okay, just to make the,</span> <span m="1465000">like I dropped the x over there.</span> </p>
+<p><span m="1469000">If it's a solution to the whole inhomogeneous equation,</span> <span m="1473000">then this must come out to be f of x.</span> </p>
+<p><span m="1477000">Now, what's L of yp? That's f of x too,</span> <span m="1481000">by secret little particular solution I've got in my pocket.</span> </p>
+<p><span m="1487000">Okay, I pull it out, ah-ha, L of yp,</span> <span m="1490000">that's f of x, too.</span> </p>
+<p><span m="1491000">Now, I'm going to not add them. I'm going to subtract them.</span> </p>
+<p><span m="1496000">What is L of u minus yp?</span> </p>
+<p><span m="1500000">Well, it's zero. It's zero because this is a</span> <span m="1505000">linear operator. This would be L of u minus L of</span> <span m="1508000">yp. I guess the answer is zero on</span> <span m="1512000">the right-hand side. And therefore,</span> <span m="1514000">what is the conclusion? If that's zero,</span> <span m="1517000">it must be a solution to the homogeneous equation.</span> </p>
+<p><span m="1521000">Therefore, u minus yp is equal to,</span> <span m="1524000">there must be c1 and c2. I won't give them the generic</span> <span m="1528000">names. I'll give them a name,</span> <span m="1530000">a particular one. I'll put a tilde to indicate</span> <span m="1534000">it's a particular one. c1 plus c2 y2 tilde,</span> <span m="1537000">so, in other words, for some choice of these</span> <span m="1541000">constants, and I'll call those particular choices c1 tilde and</span> <span m="1545000">c2 tilde, it must be that these are equal.</span> </p>
+<p><span m="1548000">Well, what does that say? It says that u is equal to yp</span> <span m="1552000">plus c1 tilde, blah, blah, blah,</span> <span m="1554000">blah, plus c2 tilde, blah, blah, blah,</span> <span m="1557000">blah, and therefore chose that u wasn't a new solution.</span> </p>
+<p><span m="1562000">It was one of these. So, u isn't new.</span> </p>
+<p><span m="1568000">So, I should write it down. Otherwise some of you will have</span> <span m="1578000">missed the punch line. Okay, therefore,</span> <span m="1585000">u is equal to yp plus c1 tilde y1 plus c2 tilde y2.</span> </p>
+<p><span m="1596000">And, it shows. This guy who thought he was new</span> <span m="1599000">was not new at all. It was just one of the other</span> <span m="1603000">solutions. Okay, well, now,</span> <span m="1605000">since the coefficient's a constant, apparently we've done</span> <span m="1609000">half the work. We know what the complementary</span> <span m="1612000">solution is because you know how to do those in terms of</span> <span m="1616000">exponentials and complex exponentials,</span> <span m="1619000">signs and cosines, and so on.</span> </p>
+<p><span m="1623000">So, what's left to do? All we have to do is find to</span> <span m="1627000">solve equations, which are inhomogeneous.</span> </p>
+<p><span m="1630000">All we have to do is find a particular solution,</span> <span m="1634000">find one solution. It doesn't matter which one,</span> <span m="1638000">any one. Just find one,</span> <span m="1640000">okay? Now, we're going to spend the</span> <span m="1643000">next two weeks trying to do this.</span> </p>
+<p><span m="1646000">I'll give you various methods. I'll give you a general method</span> <span m="1652000">involving Fourier series because it's a good excuse for learning</span> <span m="1657000">what Fourier series are. But, the answer is that in</span> <span m="1661000">general, for a few standard functions, it's known how to do</span> <span m="1665000">this. You will learn those methods</span> <span m="1668000">for finding those using operators.</span> </p>
+<p><span m="1670000">For all the others, it's done by a series,</span> <span m="1674000">or a method involving approximation.</span> </p>
+<p><span m="1678000">Or, the worse comes to worst, you throw it on a computer and</span> <span m="1682000">just take a graph and the numerical output of answers as</span> <span m="1687000">the particular solution. Okay, now before,</span> <span m="1690000">we are going to start that work, not today.</span> </p>
+<p><span m="1694000">We'll start it next Monday, and it will last,</span> <span m="1698000">as I say the next two weeks. And, we will be up to spring</span> <span m="1702000">break. But, before we do that,</span> <span m="1705000">I'd like to relate this to what we did for first order equations</span> <span m="1710000">because there is something to be learned from that.</span> </p>
+<p><span m="1716000">Think back to the linear first-order equation,</span> <span m="1718000">and I'm going to, since from now on for the rest</span> <span m="1721000">of the period, I'm going to be considering the</span> <span m="1724000">case for constant coefficients. In other words,</span> <span m="1727000">this case of springs or circuits or simple systems which</span> <span m="1731000">behave like those and have constant coefficients.</span> </p>
+<p><span m="1734000">So, for the linear, first-order equation,</span> <span m="1736000">there, too, I'm going to think of constant coefficients.</span> </p>
+<p><span m="1741000">We talked quite a bit about this equation.</span> </p>
+<p><span m="1744000">What did I call the right-hand side?</span> </p>
+<p><span m="1746000">I think we usually called it q of t,</span> <span m="1749000">right? This is in ancient history.</span> </p>
+<p><span m="1752000">The definition of ancient history was before the first</span> <span m="1756000">exam. Okay, now how does that fit</span> <span m="1758000">into this theorem that I've given you?</span> </p>
+<p><span m="1761000">Remember what the solution looked like.</span> </p>
+<p><span m="1765000">The solution looked like, remember, you took the</span> <span m="1768000">integrating factor was e to the kt,</span> <span m="1772000">and then after you integrated both sides, multiplied through,</span> <span m="1777000">and then the final answer looked like this,</span> <span m="1781000">y equaled, it was e to the negative kt times</span> <span m="1785000">either an indefinite integral, or a definite integral</span> <span m="1790000">depending on your preference, q of t,</span> <span m="1794000">so, x is metamorphosed into t. I gather you've got that,</span> <span m="1798000">e to the kt plus, what was the other term?</span> </p>
+<p><span m="1802000">A constant times e to the negative kt</span> <span m="1808000">How does this fit into the paradigm I've given you over</span> <span m="1812000">there for solving the second order equation?</span> </p>
+<p><span m="1815000">Which term is which? Well, this has the arbitrary</span> <span m="1819000">constant in it. So, this must be the</span> <span m="1822000">complementary solution. Is it?</span> </p>
+<p><span m="1824000">Is this the solution to the associated homogeneous equation?</span> </p>
+<p><span m="1830000">What's the associated homogeneous equation?</span> </p>
+<p><span m="1832000">Put zero here. Okay, if you put zero there,</span> <span m="1835000">what's the solution? Now, this you ought to know.</span> </p>
+<p><span m="1838000">y prime equals negative ky.</span> </p>
+<p><span m="1840000">What's the solution? e to the negative kt.</span> </p>
+<p><span m="1843000">You are supposed to come into</span> <span m="1846000">this course knowing that, except there's an arbitrary</span> <span m="1849000">constant in front. So, right, this is exactly the</span> <span m="1852000">solution to the associated homogeneous equation,</span> <span m="1855000">where there is zero here. Then, what's this thing?</span> </p>
+<p><span m="1860000">This is a particular solution. This is my yp.</span> </p>
+<p><span m="1862000">But that's not a particular solution because this indefinite</span> <span m="1866000">integral, you know, has an arbitrary constant in</span> <span m="1869000">it. In fact, it's just that</span> <span m="1870000">arbitrary constant. So, it's totally confusing.</span> </p>
+<p><span m="1873000">But, this symbol, you know when you actually</span> <span m="1876000">solve the equation this way, all you did was you found one</span> <span m="1880000">function here. You didn't throw in the</span> <span m="1882000">arbitrary constant right away. All you needed to do was find</span> <span m="1886000">one function. And, even if you really are</span> <span m="1889000">bothered by the fact that this is so indefinite,</span> <span m="1892000">and therefore, make it a particular solution</span> <span m="1895000">by making this zero, make it a definite integral,</span> <span m="1898000">zero, here, t there, and then change those t's to</span> <span m="1902000">dummy t's, t1's or t tildes, or something like that.</span> </p>
+<p><span m="1905000">So, this fits into that thing. In other words,</span> <span m="1908000">I could have done it at that time, but I didn't the point</span> <span m="1912000">because this can be solved directly, whereas,</span> <span m="1915000">of course, the general second order equation in homogeneous</span> <span m="1918000">cannot be solved directly, and therefore you have to be</span> <span m="1922000">willing to talk about what its solutions look like in advance.</span> </p>
+<p><span m="1928000">Now, remember I said, we talked, I said there was two</span> <span m="1932000">different cases, although both of them had the</span> <span m="1935000">identical looking solution. Their meaning in the physical</span> <span m="1939000">world was so different that they really should be considered as</span> <span m="1944000">solving the same equation. And, one of these was the case.</span> </p>
+<p><span m="1950000">Of the two, perhaps the more important was the case when k</span> <span m="1954000">was positive, and of course the other is when</span> <span m="1958000">k is negative. When k is positive,</span> <span m="1961000">that had the effect of separating that solution into</span> <span m="1965000">this part, which was a transient, and the other part,</span> <span m="1969000">which was a steady state. The steady state solution,</span> <span m="1973000">that was the yp part of it in that terminology.</span> </p>
+<p><span m="1977000">And, the transient part, it was trangent because it went</span> <span m="1982000">to zero. If k is positive,</span> <span m="1985000">the exponential dies regardless of what c is.</span> </p>
+<p><span m="1989000">So, the transient, that's the yc part.</span> </p>
+<p><span m="1992000">It goes to zero as Ttgoes to infinity.</span> </p>
+<p><span m="1996000">The transient depends on, uses, the initial condition,</span> <span m="2001000">whatever it is, because that's what determines</span> <span m="2005000">the value of c. On the other hand,</span> <span m="2008000">this initial condition makes no difference as t goes towards</span> <span m="2013000">infinity. All that's left is this steady</span> <span m="2018000">state solution. And, all solutions tend to the</span> <span m="2022000">steady state solution. So, if k is positive,</span> <span m="2026000">one gets this analysis of the solutions into the sum of one</span> <span m="2032000">basic solution, and the others,</span> <span m="2035000">which just die away, have no influence on this,</span> <span m="2039000">less and less influence as time goes to infinity.</span> </p>
+<p><span m="2045000">For k less than zero, this analysis does not work</span> <span m="2049000">because this term, if k is less than zero,</span> <span m="2052000">this term goes to infinity or negative infinity,</span> <span m="2056000">and typically tends to dominate that.</span> </p>
+<p><span m="2059000">So, it's the start that the important one.</span> </p>
+<p><span m="2063000">It depends on the initial conditions, and the analysis is</span> <span m="2068000">meaningless. So, the above is meaningless.</span> </p>
+<p><span m="2073000">And now, what I'd like to do is try to see what the analog of</span> <span m="2079000">that is for second order equations, and higher order</span> <span m="2085000">equations. If you understand second-order,</span> <span m="2089000">that's good enough. Higher order goes exactly the</span> <span m="2094000">same way. So, the question is,</span> <span m="2098000">for second-order, let's make it with constant</span> <span m="2102000">coefficients plus, I could call it b and k,</span> <span m="2107000">oh, no, b k, or p.</span> </p>
+<p><span m="2111000">The trouble is, that wouldn't take care of the</span> <span m="2114000">electrical circuits. So, I just want to use neutral</span> <span m="2117000">letters, which suggest nothing. And, you can make them turn it</span> <span m="2122000">into a circuit, so springs, or yet other</span> <span m="2125000">examples undreamt of. But these are constants.</span> </p>
+<p><span m="2128000">And I'm going to think of it as time.</span> </p>
+<p><span m="2132000">I think I'll switch back to time, let x be the time.</span> </p>
+<p><span m="2137000">So, B y equals f of t. So, there is our equation.</span> </p>
+<p><span m="2143000">A and B are constants. And, the question is,</span> <span m="2147000">the question I'm asking, can think of either of these</span> <span m="2153000">two models or others, the question I'm asking is,</span> <span m="2158000">under what circumstances can I make that same type of analysis</span> <span m="2164000">into steady-state and transient? Well, what does the solution</span> <span m="2171000">look like? The solution looks like y</span> <span m="2175000">equals a particular solution plus c1 y1 plus c2 y2.</span> </p>
+<p><span m="2180000">Therefore, to make that look</span> <span m="2184000">like this, the c1 and c2 contain the initial conditions.</span> </p>
+<p><span m="2191000">This part does not. Therefore, if I want to say</span> <span m="2195000">that the solutions look like a steady state solution plus</span> <span m="2201000">something that dies away, which becomes less and less</span> <span m="2207000">important as time goes on, what I'm really asking is,</span> <span m="2212000">under what circumstances is this part guaranteed to go to</span> <span m="2218000">zero? So, the question is,</span> <span m="2221000">when, in other words, under what conditions on the</span> <span m="2226000">equation A and B, in effect, is what we are</span> <span m="2230000">asking. When does c1 y1 plus c2 y2 go</span> <span m="2234000">to zero as t goes to infinity,</span> <span m="2239000">regardless of what c1 and c2 are for all c1 c2.</span> </p>
+<p><span m="2245000">Now, here there was no difficulty.</span> </p>
+<p><span m="2250000">We had the thing very explicitly, and you could see k</span> <span m="2254000">is positive: this goes to zero. And if k is negative,</span> <span m="2258000">it doesn't go to zero. It goes to infinity.</span> </p>
+<p><span m="2261000">Here, I want to make the same kind of analysis,</span> <span m="2264000">except it's just going to take, it's a little more trouble.</span> </p>
+<p><span m="2269000">But the answer, when it finally comes out is</span> <span m="2272000">very beautiful. So, when are all these guys</span> <span m="2275000">going to go to zero? First of all,</span> <span m="2278000">you might as well just have the definition.</span> </p>
+<p><span m="2281000">So, all the good things that this is going to imply,</span> <span m="2285000">if this is so, in other words,</span> <span m="2287000">if they all go to zero, everything in the complementary</span> <span m="2292000">solution, then the ODE is called stable.</span> </p>
+<p><span m="2297000">Some people call it asymptotically stable.</span> </p>
+<p><span m="2301000">I don't know what to call it. I can make the analysis,</span> <span m="2308000">and then I use the identical terminology, c1 y1 plus c2 y2.</span> </p>
+<p><span m="2316000">This is called the transient because it goes to zero.</span> </p>
+<p><span m="2320000">This is called the particular solution now that we labored so</span> <span m="2325000">hard to get for the next two weeks.</span> </p>
+<p><span m="2327000">It's the important part. It's the steady-state part.</span> </p>
+<p><span m="2332000">It's what lasts out to infinity after the other stuff has</span> <span m="2336000">disappeared. So, this is the steady-state</span> <span m="2339000">solution, steady-state solution, okay?</span> </p>
+<p><span m="2344000">And, the differential equation is called stable.</span> </p>
+<p><span m="2347000">Now, it's of the highest interest to know when a</span> <span m="2350000">differential equation is stable, linear differential equation is</span> <span m="2354000">stable in this sense because you have a control.</span> </p>
+<p><span m="2357000">You know what its solutions look like.</span> </p>
+<p><span m="2360000">You have some feeling for how it's behaving in the long term.</span> </p>
+<p><span m="2364000">If this is not so, each equation is a law unto</span> <span m="2367000">itself if you don't know. So, let's do the work.</span> </p>
+<p><span m="2371000">For the rest of the period, what I'd like to do is to find</span> <span m="2376000">out what the conditions are, which make this true.</span> </p>
+<p><span m="2380000">Those were the equations which we will have a right to call</span> <span m="2385000">stable. So, when does this happen,</span> <span m="2388000">and where is it going to happen?</span> </p>
+<p><span m="2390000">I don't know. I guess, here.</span> </p>
+<p><span m="2405000">Now, I think the first step is fairly easy, and it will give</span> <span m="2410000">you a good review of what we've been doing up until now.</span> </p>
+<p><span m="2414000">So, I'm simply going to make a case-by-case analysis.</span> </p>
+<p><span m="2419000">Don't worry, it won't take very long.</span> </p>
+<p><span m="2422000">What are the cases we've been studying?</span> </p>
+<p><span m="2425000">Well, what do the characteristic roots look like?</span> </p>
+<p><span m="2429000">The roots of the characteristic equation, in other words,</span> <span m="2434000">remember, there are cases. The first case is they are real</span> <span m="2441000">and distinct, r1 not equal to r2,</span> <span m="2445000">real and distinct. What are the other cases?</span> </p>
+<p><span m="2450000">Well, r1 equals r2. And then, there's the case</span> <span m="2456000">where there are complex. So, I will write it r equals a</span> <span m="2462000">plus or minus b i. What do the solutions look</span> <span m="2467000">like? So, my ham-handed approach to</span> <span m="2469000">this problem is going to be, in each case,</span> <span m="2472000">I'll look at the solutions, and first get the condition on</span> <span m="2476000">the roots. So, in other words,</span> <span m="2478000">I'm not going to worry right away about the a and the b.</span> </p>
+<p><span m="2481000">I'm going, instead, to worry about expressing this</span> <span m="2484000">condition of stability in terms of the characteristic roots.</span> </p>
+<p><span m="2488000">In fact, that's the only way in which many people know the</span> <span m="2492000">conditions. You're going to be smarter.</span> </p>
+<p><span m="2495000">Okay, what do the solutions look like?</span> </p>
+<p><span m="2498000">Well, the general solution looks like e to the r1 t plus c2</span> <span m="2502000">e to the r2 t.</span> </p>
+<p><span m="2505000">Okay, so, what's the stability condition?</span> </p>
+<p><span m="2508000">In other words, if equation happened to have</span> <span m="2511000">its characteristic roots, real and distinct,</span> <span m="2514000">under what circumstances would it be stable?</span> </p>
+<p><span m="2517000">Would it, in other words, all its solutions go to zero?</span> </p>
+<p><span m="2521000">So, I'm talking about the homogeneous equation,</span> <span m="2524000">the reduced equation, the associated homogeneous</span> <span m="2527000">equation. Why?</span> </p>
+<p><span m="2530000">Because that's all that's involved in this.</span> </p>
+<p><span m="2533000">In other words, when I write that,</span> <span m="2535000">I am no longer interested in the whole equation.</span> </p>
+<p><span m="2539000">All I'm interested in is the reduced equation,</span> <span m="2542000">the equation where you turn the f of t on the</span> <span m="2546000">right-hand side into zero. So, what's the stability</span> <span m="2551000">condition? Well, let's write it out.</span> </p>
+<p><span m="2555000">Under what circumstances will all these guys go to zero?</span> </p>
+<p><span m="2561000">If r1 and r2 should be negative, can they be zero?</span> </p>
+<p><span m="2566000">No, because then it will be a constant and it will go to zero.</span> </p>
+<p><span m="2572000">How about this one? Well, in this one,</span> <span m="2576000">it's (c1 plus c2 times t) multiplied by e to the r1 t.</span> </p>
+<p><span m="2581000">Of course, both of these are</span> <span m="2588000">the same. I'll just arbitrarily pick one</span> <span m="2591000">of them. What happens to this as things</span> <span m="2594000">go to zero? Well, this part is rising,</span> <span m="2596000">at least if c2 is positive. This part is either helping or</span> <span m="2601000">it's hindering. But, I hope you know what these</span> <span m="2604000">functions look like, and you know which of them go</span> <span m="2608000">to zero. They go to zero if r1 is</span> <span m="2611000">negative. It might rise in the beginning,</span> <span m="2615000">but after a while they lose the energy.</span> </p>
+<p><span m="2619000">Of course, if r1 is equal to zero, what do these guys do?</span> </p>
+<p><span m="2624000">Linear, go to infinity. Well, we are doing okay.</span> </p>
+<p><span m="2629000">How about here? Well, here, it's a little more</span> <span m="2633000">complicated. The solutions look like e to</span> <span m="2637000">the at times (c1 cosine bt plus c2 sine bt).</span> </p>
+<p><span m="2643000">Now, this part is a pure</span> <span m="2647000">oscillation. You know that.</span> </p>
+<p><span m="2649000">It might have a big amplitude, but whatever it does,</span> <span m="2653000">it does the same thing all the time.</span> </p>
+<p><span m="2656000">So, whether this goes to zero depends entirely upon what that</span> <span m="2660000">exponential is doing. And, that exponential goes to</span> <span m="2664000">zero if a is negative. So here, the condition is</span> <span m="2668000">negative. And now, the only thing left to</span> <span m="2673000">do is to say it nicely. I've got three cases,</span> <span m="2678000">and I want to say them all in one breath.</span> </p>
+<p><span m="2683000">So, the stability condition is, the ODE is stable.</span> </p>
+<p><span m="2689000">So, this is, or f of t.</span> </p>
+<p><span m="2693000">It doesn't matter. But, psychologically,</span> <span m="2697000">you can put this as zero there, is stable if what?</span> </p>
+<p><span m="2705000">In case one, this is true.</span> </p>
+<p><span m="2707000">In case two, that's true.</span> </p>
+<p><span m="2710000">In case three, that's true.</span> </p>
+<p><span m="2713000">But that's ugly. Make it beautiful.</span> </p>
+<p><span m="2717000">The beautiful way of saying it is if all the characteristic</span> <span m="2723000">roots have negative real parts. If the characteristic roots,</span> <span m="2731000">the r's or the a plus or minus b i, have negative real part.</span> </p>
+<p><span m="2738000">That's the form in which the electrical engineers will nod</span> <span m="2744000">their head, tell you, yeah, that's right,</span> <span m="2749000">negative real part, sorry.</span> </p>
+<p><span m="2752000">Isn't it right? Is that right here?</span> </p>
+<p><span m="2756000">Yeah. What's the real part of these</span> <span m="2759000">guys? They themselves,</span> <span m="2763000">because they are real. What's the real part of this?</span> </p>
+<p><span m="2769000">Yeah. The only case in which I really</span> <span m="2773000">had to use real part is when I talk about the complex case</span> <span m="2780000">because a is just the real part of a complex number.</span> </p>
+<p><span m="2786000">It's not the whole thing.</span> </p>
+</div>
+        <div id="vid_index" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Free Downloads</h2>
+<h3 class="subsubhead">Video</h3>
+<ul>
+<li>iTunes U (<a href="https://itunes.apple.com/us/itunes-u/id493274885">MP4 - 88MB</a>)</li>
+<li>Internet Archive (<a href="http://www.archive.org/download/MIT18.03S06/mit-ocw-18.03-lec12-07mar2003-220k_512kb.mp4">MP4 - 88MB</a>)</li>
+</ul>
+<br><h3 class="subsubhead">Caption</h3>
+<ul><li>English-US (<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/stability-of-constant-coefficient-second-order-des/eyNm7XGJr4s.srt">SRT</a>)</li></ul>
+</div>
+    
+   </div>  
+
+
+
+      					 
+        <div class="" id="parent-fieldname-bottom_html_area">
+            
+            
+        </div>
+    
+                    </main><!--Course_inner_chip tag close -->
+</div>
+<!--Course_wrapper tag close --> 
+            </div>
+<!--left tag close -->
+            <aside id="right"><!--Begin Right Portion --><div>
+    
+
+
+
+</div>
+
+                	<div>
+    
+
+
+
+</div>
+
+
+        <div class="" id="parent-fieldname-rsi_top_html_area">
+            
+            
+        </div>
+    
+
+<!-- RSI google ad space-->
+
+
+<div id="google_ads">    
+    <script type="text/javascript" src="https://partner.googleadservices.com/gampad/google_service.js"></script><script type="text/javascript">GS_googleAddAdSenseService("ca-pub-6588555046597237");GS_googleEnableAllServices();</script><script type="text/javascript">GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_A_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_B_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_C_DL");</script><script type="text/javascript">GA_googleFetchAds();</script><script language="javascript" type="text/javascript">
+GA_googleAddAttr("TYPE","HOUSE");
+GA_googleAddAttr("DEPARTMENT","18");
+GA_googleAddAttr("CRS_BEG2","03");
+GA_googleAddAttr("CRS_END","SC");
+GA_googleAddAttr("SESSION","F");
+GA_googleAddAttr("YEAR","11");
+</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_A_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_B_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_C_DL");</script>
+</div>
+
+<!-- End RSI ads--> 
+
+<div>
+    
+
+
+
+</div>
+
+            </aside><!--Right div close --><div class="clear"></div> 
+        </div>
+<!--grid tag close --> 
+      </div>
+		
+		<footer id="bottom"><div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="footer">
+<nav aria-label="Footer"><nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses"><span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul></nav><div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators"><span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">Highlights for High School</a></li>
+    <li><a href="http://k12videos.mit.edu" aria-label="External Link: MIT+K12 Videos">MIT+K12 Videos</a></li>
+    <li><a href="http://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+</ul></nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate"><span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/give/shop-ocw/">Shop OCW</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul></nav><div class="grid_2" id="foot-c4">
+<nav aria-labelledby="f-about"><span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    <li><a href="https://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>
+</ul></nav><!--about--><nav aria-labelledby="f-tools"><span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="../../../../common/jsp/feedback.htm">Contact Us</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="../../../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul></nav><!--tools-->
+</div>
+</nav><aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5"><span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script></div>
+</aside><div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare makes the materials used in the teaching of almost all of MIT's subjects available on the Web, free of charge. With more than 2,400 courses available, OCW is delivering on the promise of open sharing of knowledge. <a href="http://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;">
+<a href="http://web.mit.edu"><img src="../../../../common/images/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="http://odl.mit.edu"><img src="https://ocw.mit.edu/images/logo_odl.png" alt="MIT Office of Digital Learning logo and name." style="width: 289; height: 54; vertical-align: top;"></a><a href="http://www.oeconsortium.org/"><img src="https://ocw.mit.edu/images/logo_oec.png" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../../../../common/images/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; margin-left: 13px;"></a>
+<p class="copyright">© 2001–2018<br>
+Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="../../../../common/terms/index.htm" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+</body>
+</html>

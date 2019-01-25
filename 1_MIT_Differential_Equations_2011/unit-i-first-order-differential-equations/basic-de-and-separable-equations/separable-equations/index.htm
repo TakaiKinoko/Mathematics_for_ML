@@ -1,0 +1,913 @@
+<!DOCTYPE html><html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="format-detection" content="telephone=no">
+<title>Separable Equations | Basic DE's and Separable Equations | Unit I: First Order Differential Equations | Differential Equations | Mathematics | MIT OpenCourseWare</title>
+<!-- Begin Automatic Metadata Insertion --><meta content="18-03sc-differential-equations-fall-2011" name="WT.cg_n">
+<meta content="Separable Equations" name="WT.cg_s">
+<meta content="" name="Description">
+<meta content="Mattuck, Arthur" name="Author">
+<meta content="Miller, Haynes" name="Author">
+<meta content="Orloff, Jeremy" name="Author">
+<meta content="Lewis, John" name="Author">
+<meta content="18.03SC,18.03,Ordinary Differential Equations,ODE,modeling physical systems,first-order ODE's,Linear ODE's,second order ODE's,second order ODE's with constant coefficients,Undetermined coefficients,variation of parameters,Sinusoidal signals,exponential signals,oscillations,damping,resonance,Complex numbers and exponentials,Fourier series,periodic solutions,Delta functions,convolution,Laplace transform methods,Matrix systems,first order linear systems,eigenvalues and eigenvectors,Non-linear autonomous systems,critical point analysis,phase plane diagrams,Linear Algebra" name="keywords">
+<meta content="18.03SC Differential Equations | Separable Equations" name="Search_Display">
+<meta content="Differential Equations" itemprop="about">
+<meta content="Linear Algebra" itemprop="about">
+<!-- End Automatic Metadata Insertion --><link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/grid.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/base.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/menu.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.bubblepopup.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/search.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/courses_new.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/jquery.jscrollpane.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/media_tabs.css">
+<link title="default" rel="stylesheet" type="text/css" href="../../../../common/styles/scholar2.css">
+<link href="https://ocw.mit.edu/xml/ocwcc.rdf" type="application/rdf+xml" rel="metadata">
+<link rel="canonical" href="https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations/">
+<link rel="apple-touch-icon" href="../../../../common/images/apple-touch-icon.png">
+<script type="text/javascript" src="../../../../common/scripts/jquery.js"></script><script type="text/javascript" src="../../../../common/scripts/ocw-media-utils-offline.js"></script><script type="text/javascript" src="../../../../common/scripts/ocw-offline.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery.bubblepopup.min.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery-ui.min.js"></script><script type="text/javascript" src="../../../../common/scripts/jquery.jscrollpane.min.js"></script><script type="text/javascript" src="../../../../common/scripts/expandy.js"></script><script type="text/javascript" src="../../../../common/scripts/bubble-popup-offline.js"></script><script type="text/javascript">
+      $(document).ready(function() {
+        $("#tabs").tabs();
+        IpadScroller();
+      });
+    </script>
+</head>
+<body>
+<div id="fbQuote" name="fbQuote">
+        <script>
+          window.fbAsyncInit = function() {
+            FB.init({
+              appId            : '549343822066688',
+              autoLogAppEvents : true,
+              xfbml            : true,
+              version          : 'v2.11'
+            });
+	        FB.AppEvents.logEvent('Share',1);
+          };
+          (function(d, s, id){
+             var js, fjs = d.getElementsByTagName(s)[0];
+             if (d.getElementById(id)) {return;}
+             js = d.createElement(s); js.id = id;
+             js.src = "//connect.facebook.net/en_US/sdk.js";
+             fjs.parentNode.insertBefore(js, fjs);
+           }(document, 'script', 'facebook-jssdk'));
+        </script>
+</div>
+
+
+        
+        
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      
+    
+        
+	
+
+        <header id="top"><div id="grid">
+				
+				
+					
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d686561646572">
+<div class="portletStaticText portlet-static-site-header">
+<!--googleoff: index-->
+<div class="grid_6 alpha" id="banner"><a href="https://ocw.mit.edu/"><img src="../../../../common/images/ocw_mast.png" class="logo" alt="MIT OpenCourseWare, Massachusetts Institute of Technology"></a></div>
+<div class="grid_6 omega" id="subscribe">
+<aside class="module" aria-label="Connect with OCW"><table class="social"><tbody><tr>
+<td class="socialbutton"><a aria-label="Subscribe to the OCW Newsletter" href="https://ocw.mit.edu/subscribe/index.htm?utm_source=header"><img src="../../../../common/images/trans.gif" alt="An icon depicting an envelope.">Subscribe to the OCW Newsletter</a></td>
+            <td>
+<a aria-label="Facebook" href="https://facebook.com/mitocw"><img src="../../../../common/images/icon_fb.png" alt="Click to visit our Facebook page."></a>   <a aria-label="Twitter" href="https://twitter.com/mitocw"><img src="https://ocw.mit.edu/images/icon_twitter.png" alt="Click to visit our Twitter feed."></a>   <a aria-label="YouTube" href="https://www.youtube.com/mitocw"><img src="https://ocw.mit.edu/images/icon_yt.png" alt="Click to visit our YouTube page."></a>   <a aria-label="Open Matters blog on WordPress" href="https://mitopencourseware.wordpress.com/"><img src="https://ocw.mit.edu/images/icon_wp.png" alt="Click to visit our blog on WordPress."></a>
+</td>
+        </tr></tbody></table></aside><nav aria-label="Help Links" class="helplinks"><a aria-label="OCW Site Help" href="https://ocw.mit.edu/help">Help</a><span aria-hidden="true">|</span>     <a href="../../../../common/jsp/feedback.htm">Contact Us</a>   </nav>
+</div>
+<div class="clear"> </div>
+<!--googleon: index-->
+</div>
+
+</div>
+
+<div id="portletwrapper-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75" class="portletWrapper kssattr-portlethash-6f63772e746f70706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a6d6567612d6d656e75">
+<div class="portletStaticText portlet-static-mega-menu"><div><nav id="mega" class="grid_8 alpha" aria-label="Site"><ul id="menu" role="presentation">
+<li id="menu_home">
+<a href="https://ocw.mit.edu/" aria-label="Homepage"><img src="../../../../common/images/top-nav_home.png" class="home_icon" alt="Click for site home page."></a><!-- Begin Home Item -->
+</li>
+    <!-- End Home Item -->
+    <li id="drop_1" aria-label="Find Courses">
+<a href="#" aria-hidden="true">FIND COURSES</a><!-- Begin 5 columns Item -->
+    <div class="dropdown_5columns-a mega-courses">
+    <div class="col_1a">
+    <div class="row_1a">
+<nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">Find courses by:</span>
+    <ul class="find_by" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Topic</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-number/">MIT Course Number</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-department/">Department</a></li>
+    </ul></nav><nav aria-labelledby="mm-collections"><span id="mm-collections" class="nav" aria-hidden="true">Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+        <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Lectures</a></li>
+        <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+        <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+        <li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    </ul></nav><nav class="col_1b" aria-labelledby="mm-translated-courses"><span id="mm-translated-courses" class="nav" aria-hidden="true" style="line-height: 1.3;">Cross-Disciplinary Topic Lists</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/energy-courses">Energy</a></li>
+        <li><a href="https://ocw.mit.edu/courses/entrepreneurship">Entrepreneurship</a></li>
+        <li><a href="https://ocw.mit.edu/courses/environment-courses">Environment</a></li>
+        <li><a href="https://ocw.mit.edu/courses/intro-programming">Introductory Programming</a></li>
+        <li><a href="https://ocw.mit.edu/courses/life-sciences">Life Sciences</a></li>
+        <li><a href="https://ocw.mit.edu/courses/transportation-courses">Transportation</a></li>
+    </ul></nav>
+</div>
+    <div class="row_1b"><nav aria-labelledby="mm-cross-disciplinary-topic-lists"><span id="mm-cross-disciplinary-topic-lists" class="nav" aria-hidden="true">Translated Courses</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/translated-courses/traditional-chinese" aria-label="Traditional Chinese">繁體字 / Traditional Chinese</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/spanish" aria-label="Spanish">Español / Spanish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/turkish" aria-label="Turkish">Türkçe / Turkish</a></li>
+        <li><a href="https://ocw.mit.edu/courses/translated-courses/korean" aria-label="Korean">(비디오)한국 / Korean</a></li>
+    </ul></nav></div>
+    </div>
+    </div>
+    </li>
+    <li id="drop_2">
+<a href="#" aria-label="For Educators">For Educators</a>
+    <div class="dropdown_1column-a" style="width: 270px;"><nav aria-labelledby="mm-find-courses-by"><span id="mm-find-courses-by" class="nav" aria-hidden="true">OCW Educator Portal</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+        <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=megamenu&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">OCW Collections</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+        <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    </ul>
+<span id="mm-collections" class="nav" aria-hidden="true">K-12</span>
+    <ul role="presentation">
+<li><a href="https://ocw.mit.edu/high-school/">OCW Highlights for High School</a></li>
+        <li><a href="https://www.k12videos.mit.edu/videos" aria-label="External Link: MIT Plus K12 Videos">MIT+K12 Videos</a></li>
+    </ul>
+<span id="mm-higher-ed" class="nav" aria-hidden="true">Higher Ed</span>
+    <ul>
+<li><a href="https://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+        <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_3">
+<a href="#" aria-hidden="true">Give Now</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="Donate"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+        <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+        <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+        <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+        <li><a href="https://ocw.mit.edu/give/shop-ocw">Shop OCW</a></li>
+        <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+    </ul></nav></div>
+    </li>
+    <li id="drop_4">
+<a href="#" aria-hidden="true">About</a>
+    <div class="dropdown_1column-a"><nav class="col_1" aria-label="About"><ul role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About MIT OpenCourseWare</a></li>
+        <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+        <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+        <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    </ul></nav></div>
+    </li>
+</ul></nav></div></div>
+
+</div>
+
+
+
+
+
+<!--googleoff: index-->
+<script>
+  (function() {
+	var cx = '012626166551961672889:owjdpuboktq';
+	var gcse = document.createElement('script');
+	gcse.type = 'text/javascript';
+	gcse.async = true;
+	gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+	var s = document.getElementsByTagName('script')[0];
+	s.parentNode.insertBefore(gcse, s);
+  })();
+  window.onload = function(){
+	document.getElementById('gsc-i-id1').placeholder = 'Search';	
+  };
+
+$(document).ready(function(){
+
+$('.advanceSearch a').keydown(function(event){showSearchTips($(this),event);})
+$('#searchTipsModal').keydown(function(event){showSearchTips($(this),event);})
+
+function showSearchTips(obj,evt) {
+// if pressed enter key
+	if ( evt.which == 13 || evt.which == 32) {
+		showModal();
+		ga('send', 'pageview', "AdvanceSearch");
+		$(".advanceSearch a").attr('aria-expanded', 'true');
+		$('.searchTipsModal').focus();
+		evt.preventDefault();
+		}
+	if ( evt.which == 27 ) {
+		hideModal();
+		$(".advanceSearch a").attr('aria-expanded', 'false');
+		var modal = document.getElementById('searchTipsModal');
+		modal.style.display = "none";
+		$(".advanceSearch a").focus();
+		evt.preventDefault();
+		}
+}
+
+});
+function showModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "block";
+	ga('send', 'pageview', "AdvanceSearch");
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", true);
+	window.setTimeout(function () {
+    document.getElementById('searchTipsModal').focus(); }, 0);
+}
+
+function hideModal(){
+	var modal = document.getElementById('searchTipsModal');
+	modal.style.display = "none";
+	document.getElementById("searchTipsBtn").setAttribute("aria-expanded", false);
+}
+</script><div id="search" role="search" class="grid_4 omega">
+    	<table class="search"><tbody><tr>
+<td><div class="searchboxheader"><searchbox-only resultsurl="/search/ocwsearch.htm"></searchbox-only></div></td>
+						<td>
+							<div class="advanceSearch">
+								<a id="searchTipsBtn" onclick="showModal();" href="#" role="button" aria-label="search tips" aria-expanded="false" aria-describedby="searchtips">Search Tips</a>
+
+								<!-- The Modal -->
+								<div id="searchTipsModal" class="modal" tabindex="-1">
+								  <!-- Modal content -->
+									<div class="modal-content">
+										<div class="modal-body">
+											<button class="close" onclick="hideModal();" aria-label="close">X</button>
+											<span>
+												<b>Exclude words from your search</b>
+												<br>Put - in front of a word you want to leave out. For example, jaguar speed -car
+												<br><br><b>Search for an exact match</b>
+												<br>Put a word or phrase inside quotes. For example, "tallest building".
+												<br><br><b>Search for wildcards or unknown words</b>
+												<br>Put a * in your word or phrase where you want to leave a placeholder. For example, "largest * in the world".
+												<br><br><b>Search within a range of numbers</b>
+												<br>Put .. between two numbers. For example, camera $50..$100.
+												<br><br><b>Combine searches</b>
+												<br>Put "OR" between each search query. For example,  marathon OR race.
+												<br><br></span>
+										</div>
+								  </div>
+								</div>
+							</div>
+						</td>
+					</tr></tbody></table>
+</div>
+<div class="clear"></div>
+<!--googleon: index-->
+<!-- *end header* -->
+
+				
+				
+			</div>
+<!-- top grid end -->
+		</header><!-- top end --><div id="center_media">
+      	<div id="grid">
+      		<div id="left">
+        		<nav id="breadcrumb_media" aria-label="Breadcrumb"><p>
+
+    <a href="https://ocw.mit.edu/">Home</a>
+    
+        »
+        
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses">Courses</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="https://ocw.mit.edu/courses/mathematics">Mathematics</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/index.htm">Differential Equations</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/unit-i-first-order-differential-equations/index.htm">Unit I: First Order Differential Equations</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            <a href="../../../../contents/unit-i-first-order-differential-equations/basic-de-and-separable-equations/index.htm">Basic DE's</a>
+            
+                »
+                
+            
+            
+         
+    
+    
+        
+            
+            
+            Separable Equations
+         
+    
+</p>
+
+            	</nav><div class="clear"></div>
+        		<div id="media_title">
+        		<h1 class="title" itemprop="name" property="dct:title">
+        <span class="" id="parent-fieldname-title">
+            Separable Equations
+        </span>
+    </h1>
+        		</div>
+           		<div class="clear"></div>
+           		<div id="course_wrapper_media">
+           			<nav id="course_nav" aria-label="Course"><script language="javascript" type="text/javascript">
+function toggleMenu(objID) {
+  if (!document.getElementById) return;
+  var ob = document.getElementById(objID);
+  ob.className = (ob.className == 'selected')?'': 'selected';
+}
+function toggleClass(id)
+{
+  var divtoggleClass= document.getElementById(id);
+  divtoggleClass.className = (divtoggleClass.className == 'mO')?'mC': 'mO';
+  return false;
+}
+function changeAlt(id)
+{
+  id.alt = (id.alt == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+  id.title = (id.title == 'Expand Menu')?'Collapse Menu' : 'Expand Menu';
+}
+</script><!--Left Nav Starts --><ul>
+<li class="">
+			   			<a href="../../../../contents/index.htm">
+		                  Course Home  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="syllabus" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menusyllabus'); toggleClass('syllabus'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/syllabus/index.htm" class="">
+		                  Syllabus  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menusyllabus" class="">
+<li class="">
+				 		<a href="../../../../contents/syllabus/meet-the-tas/index.htm" class="">Meet the TAs</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-i-first-order-differential-equations" class="mC">
+						<a href="#" class="" onclick="toggleMenu('menuunit-i-first-order-differential-equations'); toggleClass('unit-i-first-order-differential-equations'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Collapse Menu" title="Collapse Menu"></a>
+		                <a href="../../../../contents/unit-i-first-order-differential-equations/index.htm" class="">
+		                  Unit I: First Order Differential Equations  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-i-first-order-differential-equations" class="selected">
+<li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/conventions-and-preliminary-material/index.htm" class="">Conventions</a>
+		            </li>
+		            <li class="selected">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/basic-de-and-separable-equations/index.htm" class="selected">Basic DE's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/geometric-methods/index.htm" class="">Geometric Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/numerical-methods/index.htm" class="">Numerical Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-linear-odes/index.htm" class="">Linear ODE's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/solution-by-integrating-factors/index.htm" class="">Integrating Factors</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/complex-arithmetic-and-exponentials/index.htm" class="">Complex Arithmetic</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/sinusoidal-functions/index.htm" class="">Sinusoidal Functions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-constant-coefficient-linear-odes/index.htm" class="">Constant Coefficients</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/exponential-input-gain-and-phase-lag/index.htm" class="">Exponential Input</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/first-order-autonomous-differential-equations/index.htm" class=""> Autonomous Equations</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/linear-vs.-nonlinear/index.htm" class="">Linear vs. Nonlinear</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-i-first-order-differential-equations/exam-1/index.htm" class="">Exam 1</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-ii-second-order-constant-coefficient-linear-equations" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-ii-second-order-constant-coefficient-linear-equations'); toggleClass('unit-ii-second-order-constant-coefficient-linear-equations'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/index.htm" class="">
+		                  Unit II: Second Order Constant Coefficient Linear Equations  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-ii-second-order-constant-coefficient-linear-equations" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/modes-and-the-characteristic-equation/index.htm" class="">Characteristic Equation</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/damped-harmonic-oscillators/index.htm" class="">Damped Oscillators</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/exponential-response/index.htm" class="">Exponential Response</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/gain-and-phase-lag/index.htm" class="">Gain and Phase Lag</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/undetermined-coefficients/index.htm" class="">Undetermined Coefficients</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/linear-operators-linear-time-invariance/index.htm" class="">Linear Operators</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/pure-resonance/index.htm" class="">Pure Resonance</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/frequency-response-and-practical-resonance/index.htm" class="">Frequency Response</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/applications-lrc-circuits-damping-ratio/index.htm" class="">Applications</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-ii-second-order-constant-coefficient-linear-equations/exam-2/index.htm" class="">Exam 2</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-iii-fourier-series-and-laplace-transform" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-iii-fourier-series-and-laplace-transform'); toggleClass('unit-iii-fourier-series-and-laplace-transform'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/index.htm" class="">
+		                  Unit III: Fourier Series and Laplace Transform  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-iii-fourier-series-and-laplace-transform" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/fourier-series-basics/index.htm" class="">Fourier Series: Basics</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/operations-on-fourier-series/index.htm" class="">Operations</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/odes-with-periodic-input-resonance/index.htm" class="">Periodic Input</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/step-and-delta-functions-integrals-and-generalized-derivatives/index.htm" class="">Step and Delta</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/unit-step-and-unit-impulse-response/index.htm" class="">Impulse Response</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/convolution/index.htm" class="">Convolution</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/laplace-transform-basics/index.htm" class="">Laplace Transform</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/partial-fractions-and-inverse-laplace-transform/index.htm" class="">Partial Fractions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/laplace-transform-solving-initial-value-problems/index.htm" class="">Solving IVP's</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/transfer-system-and-weight-functions-greens-formula/index.htm" class="">Transfer Functions</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/poles-amplitude-response-connection-to-erf/index.htm" class="">Poles</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iii-fourier-series-and-laplace-transform/exam-3/index.htm" class="">Exam 3</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+         	<li class="">
+       		<div class="tlp_links">
+	        	<div id="unit-iv-first-order-systems" class="mO">
+						<a href="#" class="" onclick="toggleMenu('menuunit-iv-first-order-systems'); toggleClass('unit-iv-first-order-systems'); return false">
+		                  <img src="../../../../common/images/trans.gif" class="expandCollapseTrans" border="0" width="10" height="12" onclick="changeAlt(this)" alt="Expand Menu" title="Expand Menu"></a>
+		                <a href="../../../../contents/unit-iv-first-order-systems/index.htm" class="">
+		                  Unit IV: First-order Systems  			                
+	                    </a>
+	                 			                
+	            </div>
+			    
+	        	<ul id="menuunit-iv-first-order-systems" class="">
+<li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/linear-systems-introduction/index.htm" class="">Linear Systems</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/matrix-methods-eigenvalues-and-normal-modes/index.htm" class="">Matrix Methods</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/qualitative-behavior-phase-portraits/index.htm" class="">Phase Portraits</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/matrix-exponentials/index.htm" class="">Matrix Exponentials</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/nonlinear-systems/index.htm" class="">Nonlinear Systems</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/linearization-near-critical-points/index.htm" class="">Linearization</a>
+		            </li>
+		            <li class="">
+				 		<a href="../../../../contents/unit-iv-first-order-systems/limitations-of-the-linear-limit-cycles-and-chaos/index.htm" class="">Limit Cycles and Chaos</a>
+		            </li>
+			    </ul>
+</div>
+			</li>
+	
+	
+	    	
+	    	    <li class="">
+			   			<a href="../../../../contents/final-exam/index.htm">
+		                  Final Exam  			                
+	                    </a>
+		        </li>
+		    
+         	
+	
+	
+	    	
+	    	    
+		    
+         	
+	<!--second tal block close-->  
+	
+</ul>
+<!--Left Nav Ends --></nav><main id="course_inner_media" aria-labelledby="media_title"><p><img src="../../../../common/images/scholar_bar_chp.png" style="width: 543px; height: 32px; border: 1px solid #790835; margin-top: -16px;" alt="OCW Scholar"></p>
+      					 
+        <div class="" id="parent-fieldname-text">
+            
+            
+        </div>
+    
+      					     
+    
+    
+
+
+
+<script type="text/javascript">var caption_embed_1 ={'English - US': '/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations/76WdBlGpxVw.srt'}</script><div id="media-embed">
+         <div class="attention_message" id="embed_1">
+<p>Flash and JavaScript are required for this feature.</p>
+<p>Download the video from <a href="http://itunes.apple.com/us/itunes-u/separable-equations/id493274885?i=109175787">iTunes U</a> or the <a href="http://www.archive.org/download/MIT18.03SCF11/MIT18_03SC_110708_L1_300k.mp4">Internet Archive</a>.</p>
+</div>
+     </div>
+    
+     <script type="text/javascript">ocw_embed_chapter_media('embed_1', 'https://www.youtube.com/v/76WdBlGpxVw', 'youtube', '/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations', 'https://img.youtube.com/vi/76WdBlGpxVw/0.jpg',0,0, 'https://ocw.mit.edu/courses/mathematics/18-03sc-differential-equations-fall-2011/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations/76WdBlGpxVw.srt')</script><div id="transcript1"></div>
+				 <script type="text/javascript">createThreePlayParams(2, 80416, "embed_1", 0, 0)</script><script type="text/javascript">
+		window.onload=function(){
+		init();
+		
+		}
+		var tabLinks = new Array();
+		var contentDivs = new Array();
+		function init() {
+		  // Grab the tab links and content divs from the page
+		  var tabListItems = document.getElementById('tabs').childNodes;
+		  for ( var i = 0; i < tabListItems.length; i++ ) {
+			if ( tabListItems[i].nodeName == "LI" ) {
+			  var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+			  var id = getHash( tabLink.getAttribute('href') );
+			  tabLinks[id] = tabLink;
+			  contentDivs[id] = document.getElementById( id );
+			}
+		  }
+		  // Assign onclick events to the tab links, and
+		  // highlight the first tab
+		  var i = 0;
+		  for ( var id in tabLinks ) {
+			tabLinks[id].onclick = showTab;
+			tabLinks[id].onfocus = function() { this.blur() };
+			if ( i == 0 ) tabLinks[id].className = 'selected';
+			i++;
+		  }
+		  // Hide all content divs except the first
+		  var i = 0;
+		  for ( var id in contentDivs ) {
+			if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+			i++;
+		  }
+		}
+		function showTab() {
+		  var selectedId = getHash( this.getAttribute('href') );
+		  // Highlight the selected tab, and dim all others.
+		  // Also show the selected content div, and hide all others.
+		  for ( var id in contentDivs ) {
+			if ( id == selectedId ) {
+			  tabLinks[id].className = 'selected';
+			  contentDivs[id].className = 'tabContent';
+			} else {
+			  tabLinks[id].className = '';
+			  contentDivs[id].className = 'tabContent hide';
+			}
+		  }
+		  // Stop the browser following the link
+		  return false;
+		}
+		function getFirstChildWithTagName( element, tagName ) {
+		  for ( var i = 0; i < element.childNodes.length; i++ ) {
+			if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+		  }
+		}
+		function getHash( url ) {
+		  var hashPos = url.lastIndexOf ( '#' );
+		  return url.substring( hashPos + 1 );
+		}
+ </script><div id="media_tabs">
+     
+        <ul id="tabs">
+<li class="first">
+                <a href="#vid_about" class="selected">Transcript</a>
+            </li>
+            <li class="">
+                <a href="#vid_index" class="">Download this Video</a>
+            </li>
+        </ul>
+<div id="vid_about" itemprop="description" class="tabContent">
+<ul><li><a class="transcript-link" title="Open in a new window." alt="Open in a new window." style="text-decoration: none; font-size: 1.0em;" target="_blank" text-decoration: none font-size: href="../../../../contents/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations/76WdBlGpxVw.pdf"> Download English-US transcript (PDF)</a></li></ul>
+<p><span m="4790">PROFESSOR: Welcome</span> <span m="5180">to</span> <span m="5440">this</span> <span m="5610">session</span> <span m="6090">on</span> <span m="6535">separable</span> <span m="6980">equations.</span> <span m="8029">So</span> <span m="8400">in</span> <span m="8540">this</span> <span m="8760">problem,</span> <span m="9340">you're</span> <span m="9520">asked</span> <span m="10030">in</span> <span m="10220">the</span> <span m="10310">first</span> <span m="10560">question</span> <span m="11000">to</span> <span m="11130">solve</span> <span m="11880">the</span> <span m="12180">initial</span> <span m="12610">value</span> <span m="12920">problem</span> <span m="13920">dy/dx</span> <span m="14830">equals</span> <span m="15120">y</span> <span m="15340">square</span> <span m="16390">with</span> <span m="16560">the</span> <span m="16630">initial</span> <span m="16960">condition</span> <span m="17470">y</span> <span m="17720">of</span> <span m="17800">zero</span> <span m="18150">equals</span> <span m="18420">1.</span> <span m="19120">In</span> <span m="19230">the</span> <span m="19310">second</span> <span m="19650">part</span> <span m="19840">of</span> <span m="19930">the</span> <span m="20010">problem,</span> <span m="20440">you're</span> <span m="20600">asked</span> <span m="20850">to</span> <span m="20930">find</span> <span m="21220">the</span> <span m="21300">general</span> <span m="21710">solution</span> <span m="22290">where</span> <span m="22540">no</span> <span m="22730">initial</span> <span m="23080">condition</span> <span m="23510">is</span> <span m="23670">imposed.</span> </p>
+<p><span m="24620">So</span> <span m="24800">here</span> <span m="25060">you</span> <span m="25170">need</span> <span m="25320">to</span> <span m="25410">remember</span> <span m="25740">your</span> <span m="25880">method</span> <span m="26180">of</span> <span m="26240">separation</span> <span m="26890">of</span> <span m="27420">variables</span> <span m="28190">to</span> <span m="28610">tackle</span> <span m="28950">the</span> <span m="29020">first</span> <span m="29280">question.</span> <span m="29980">And</span> <span m="30180">then</span> <span m="30580">in</span> <span m="30730">the</span> <span m="30810">second</span> <span m="31160">part</span> <span m="31310">of</span> <span m="31470">the</span> <span m="31570">problem,</span> <span m="32369">remember</span> <span m="33030">all</span> <span m="33310">the</span> <span m="33730">types</span> <span m="34130">of</span> <span m="34210">solutions</span> <span m="34760">and</span> <span m="34850">conditions</span> <span m="35300">that</span> <span m="35440">you</span> <span m="35560">applied</span> <span m="35960">the</span> <span m="36030">first</span> <span m="36340">part</span> <span m="36660">to</span> <span m="36950">recover</span> <span m="38530">the</span> <span m="39000">lost</span> <span m="39170">solutions.</span> <span m="40230">So</span> <span m="40450">why</span> <span m="40640">don't</span> <span m="40820">you</span> <span m="40930">take</span> <span m="41180">a</span> <span m="41260">minute,</span> <span m="41640">pause</span> <span m="41930">the</span> <span m="42010">video,</span> <span m="42720">work</span> <span m="43070">through</span> <span m="43470">questions</span> <span m="43930">a and</span> <span m="44230">b.</span> <span m="44570">And then</span> <span m="44910">we'll</span> <span m="45110">continue</span> <span m="45520">together</span> <span m="46100">when</span> <span m="46310">I</span> <span m="46380">come</span> <span m="46610">back.</span> </p>
+<p><span m="59200">Welcome</span> <span m="59560">back.</span> <span m="60470">So</span> <span m="60670">in</span> <span m="60780">the</span> <span m="60890">first</span> <span m="62310">part</span> <span m="62820">of</span> <span m="63230">the</span> <span m="63370">problem,</span> <span m="64250">we'll</span> <span m="64540">be</span> <span m="64860">solving</span> <span m="65360">the</span> <span m="65450">equation</span> <span m="65800">dy/dx</span> <span m="66500">equals</span> <span m="66730">y</span> <span m="66910">squared.</span> <span m="67350">So</span> <span m="67570">here</span> <span m="67870">the</span> <span m="67980">method</span> <span m="68350">of</span> <span m="68430">separation</span> <span m="69100">of</span> <span m="69360">variables</span> <span m="70780">tells</span> <span m="71040">us</span> <span m="71160">that</span> <span m="71320">we</span> <span m="71420">should</span> <span m="71690">regroup</span> <span m="72200">the</span> <span m="72300">variables</span> <span m="72565">of</span> <span m="72830">the</span> <span m="72990">same</span> <span m="73290">kind,</span> <span m="73630">so</span> <span m="73870">all</span> <span m="74610">the</span> <span m="74740">y</span> <span m="75010">variables</span> <span m="75440">on</span> <span m="75540">one</span> <span m="75760">side</span> <span m="76410">and</span> <span m="76610">dx</span> <span m="78120">variable</span> <span m="78480">on</span> <span m="78580">the</span> <span m="78740">other</span> <span m="78930">side</span> <span m="79160">of</span> <span m="79230">the</span> <span m="79330">equation</span> <span m="80300">and</span> <span m="80480">then</span> <span m="80940">integrate</span> <span m="81450">from</span> <span m="81620">this</span> <span m="81850">point.</span> <span m="82500">So</span> <span m="82700">here</span> <span m="83580">for</span> <span m="83840">this</span> <span m="84140">step,</span> <span m="85420">notice</span> <span m="85850">that</span> <span m="85990">I</span> <span m="86080">divided</span> <span m="86610">by</span> <span m="86780">y</span> <span m="87030">squared,</span> <span m="87890">which</span> <span m="88100">means</span> <span m="88510">that</span> <span m="88670">we</span> <span m="88770">need</span> <span m="88940">to</span> <span m="89040">impose</span> <span m="89510">the</span> <span m="89600">condition</span> <span m="90100">y</span> <span m="90470">not</span> <span m="90640">equal</span> <span m="90920">to</span> <span m="91010">zero</span> <span m="91370">from</span> <span m="91620">now</span> <span m="91820">on.</span> </p>
+<p><span m="95680">So</span> <span m="95990">from</span> <span m="96210">this</span> <span m="96400">step,</span> <span m="97410">we</span> <span m="97560">just</span> <span m="97820">use</span> <span m="98080">indefinite</span> <span m="98610">integrals</span> <span m="99910">to</span> <span m="101600">integrate</span> <span m="102070">both</span> <span m="102300">sides</span> <span m="102650">of</span> <span m="102750">the</span> <span m="102840">equation.</span> <span m="104030">So</span> <span m="104200">the</span> <span m="104330">left-hand</span> <span m="104770">side</span> <span m="105140">is</span> <span m="105240">the</span> <span m="105320">integral</span> <span m="105770">dy</span> <span m="106450">over</span> <span m="107270">y</span> <span m="107500">squared.</span> <span m="108310">So</span> <span m="108590">integral</span> <span m="109502">of</span> <span m="110710">this</span> <span m="111000">gives</span> <span m="111250">us</span> <span m="111770">minus</span> <span m="112150">1</span> <span m="112360">over</span> <span m="112600">y.</span> <span m="113380">And</span> <span m="113510">the</span> <span m="113590">right-hand</span> <span m="114020">side,</span> <span m="114300">integral</span> <span m="114670">dx,</span> <span m="115170">is</span> <span m="115310">just</span> <span m="116370">x.</span> <span m="117820">Both</span> <span m="118130">sides</span> <span m="118480">would</span> <span m="118650">give</span> <span m="118820">us</span> <span m="119560">constant</span> <span m="119970">of</span> <span m="120060">integrations,</span> <span m="120465">but</span> <span m="120870">we</span> <span m="121030">only</span> <span m="121360">need</span> <span m="121720">one</span> <span m="122160">because</span> <span m="122410">this</span> <span m="122610">is</span> <span m="122730">a</span> <span m="122790">first-order</span> <span m="123370">differential</span> <span m="123860">equation.</span> <span m="124640">And</span> <span m="124820">so</span> <span m="125050">we</span> <span m="125180">group</span> <span m="125430">them</span> <span m="125590">together</span> <span m="126010">on</span> <span m="126090">the</span> <span m="126170">right-hand</span> <span m="126570">side</span> <span m="126850">with</span> <span m="126940">constant</span> <span m="127305">c.</span> </p>
+<p><span m="138850">So</span> <span m="139100">from</span> <span m="139380">this</span> <span m="139610">point,</span> <span m="140200">given</span> <span m="140480">that</span> <span m="140640">we're</span> <span m="140900">interested</span> <span m="141430">in</span> <span m="141560">variable</span> <span m="141980">y,</span> <span m="142800">we</span> <span m="142930">need</span> <span m="143100">just</span> <span m="143370">to</span> <span m="143840">invert</span> <span m="144540">the</span> <span m="144650">expression.</span> <span m="148230">And</span> <span m="148410">that</span> <span m="148620">gives</span> <span m="148880">us</span> <span m="149580">partial</span> <span m="150010">answer,</span> <span m="150880">which</span> <span m="151080">is</span> <span m="151230">y</span> <span m="151530">of</span> <span m="151650">x</span> <span m="151940">equals</span> <span m="152280">minus</span> <span m="152690">1</span> <span m="152940">over</span> <span m="153180">x</span> <span m="153410">plus</span> <span m="153680">c.</span> <span m="154190">So</span> <span m="154370">now</span> <span m="154670">we</span> <span m="154780">need</span> <span m="154940">to</span> <span m="155040">use</span> <span m="155350">our</span> <span m="155490">initial</span> <span m="155810">condition,</span> <span m="156370">y</span> <span m="156630">of</span> <span m="156760">zero</span> <span m="157110">equals</span> <span m="157400">to</span> <span m="157530">1,</span> <span m="157790">to</span> <span m="157930">determine</span> <span m="158400">the</span> <span m="158510">value</span> <span m="158860">of</span> <span m="158930">c</span> <span m="159190">for</span> <span m="159310">this</span> <span m="159490">particular</span> <span m="160010">initial</span> <span m="160370">value</span> <span m="160680">problem.</span> </p>
+<p><span m="169400">So</span> <span m="170020">our</span> <span m="170230">initial</span> <span m="171290">condition</span> <span m="173030">was</span> <span m="173940">y</span> <span m="174130">of</span> <span m="174210">zero</span> <span m="174680">equals</span> <span m="175120">1.</span> <span m="175700">So</span> <span m="175880">if</span> <span m="176010">we</span> <span m="176100">substitute</span> <span m="176710">this</span> <span m="176950">in</span> <span m="177050">the</span> <span m="177110">expression</span> <span m="177630">that</span> <span m="177780">we</span> <span m="177920">just</span> <span m="178540">obtained,</span> <span m="180250">we</span> <span m="180380">just</span> <span m="180640">have</span> <span m="183780">zero</span> <span m="184090">plus</span> <span m="184480">c,</span> <span m="185840">which</span> <span m="186160">then</span> <span m="186930">only</span> <span m="187865">gives</span> <span m="188610">us</span> <span m="188750">c</span> <span m="189920">equal</span> <span m="190250">to</span> <span m="190460">1.</span> <span m="191480">So</span> <span m="191810">we</span> <span m="191940">end</span> <span m="192160">up</span> <span m="192320">with</span> <span m="192480">the</span> <span m="192530">value</span> <span m="192950">for</span> <span m="193310">our</span> <span m="193500">constant</span> <span m="193920">of</span> <span m="194020">integration,</span> <span m="195150">c</span> <span m="195450">equals</span> <span m="195960">minus</span> <span m="196360">1.</span> <span m="200010">And so</span> <span m="200470">the</span> <span m="200580">solution</span> <span m="201110">to</span> <span m="201200">this</span> <span m="201410">problem</span> <span m="207180">is</span> <span m="207440">y</span> <span m="207670">of</span> <span m="207840">x</span> <span m="208090">equals</span> <span m="208500">1</span> <span m="209090">over</span> <span m="209460">1</span> <span m="209730">minus</span> <span m="210280">x.</span> </p>
+<p><span m="211290">So</span> <span m="211530">if</span> <span m="211680">you</span> <span m="211840">examine</span> <span m="212340">this</span> <span m="212530">expression,</span> <span m="213090">you</span> <span m="213190">see</span> <span m="213410">right</span> <span m="213630">away</span> <span m="213830">that</span> <span m="214060">we</span> <span m="214180">have</span> <span m="214380">a</span> <span m="214440">problem</span> <span m="214920">for</span> <span m="215120">x</span> <span m="215340">equals</span> <span m="215760">to 1</span> <span m="216320">because</span> <span m="216520">at</span> <span m="216610">x</span> <span m="216810">equals</span> <span m="217170">to 1,</span> <span m="217390">we</span> <span m="217470">have</span> <span m="217840">1 over 0</span> <span m="218790">which</span> <span m="219000">means</span> <span m="219160">that,</span> <span m="219320">then,</span> <span m="219490">the</span> <span m="219570">solution</span> <span m="220140">blows</span> <span m="220440">up</span> <span m="220740">and</span> <span m="220890">we</span> <span m="221000">have</span> <span m="221110">a</span> <span m="221220">vertical</span> <span m="221740">asymptote.</span> <span m="223210">So</span> <span m="223380">let</span> <span m="223580">me</span> <span m="225080">draw</span> <span m="225280">this</span> <span m="225510">here.</span> <span m="232580">So</span> <span m="232920">we're going</span> <span m="233220">to have</span> <span m="234991">an</span> <span m="235420">asymptote</span> <span m="237562">at</span> <span m="238030">x</span> <span m="238310">equals</span> <span m="238830">1</span> <span m="240900">and</span> <span m="241080">a</span> <span m="241150">solution</span> <span m="241820">that</span> <span m="242050">passes</span> <span m="242550">through</span> <span m="246450">our</span> <span m="246630">initial</span> <span m="247070">condition,</span> <span m="248010">y</span> <span m="248120">equals</span> <span m="248510">1,</span> <span m="249730">going</span> <span m="250020">to</span> <span m="250150">infinity</span> <span m="250630">when</span> <span m="250800">approaching</span> <span m="252220">x</span> <span m="252450">equals</span> <span m="252870">1.</span> <span m="253670">But</span> <span m="253930">then</span> <span m="254160">on</span> <span m="254340">the</span> <span m="254770">right</span> <span m="255480">side</span> <span m="255900">of</span> <span m="256130">the</span> <span m="256930">value</span> <span m="257240">x</span> <span m="257440">equals</span> <span m="257779">1,</span> <span m="258070">we</span> <span m="258329">have</span> <span m="258550">another</span> <span m="258910">part</span> <span m="259170">of</span> <span m="259279">the</span> <span m="259399">solution</span> <span m="260529">that</span> <span m="261050">goes</span> <span m="261339">to</span> <span m="261450">zero</span> <span m="262029">as</span> <span m="262210">x</span> <span m="262490">goes</span> <span m="262690">to</span> <span m="262800">infinity.</span> <span m="263610">And</span> <span m="263850">that</span> <span m="264010">diverges</span> <span m="264440">to</span> <span m="264530">minus</span> <span m="264850">infinity</span> <span m="265320">when</span> <span m="265500">x</span> <span m="265730">approaches</span> <span m="266240">1.</span> </p>
+<p><span m="267300">So</span> <span m="268070">by</span> <span m="268180">convention,</span> <span m="269570">the</span> <span m="269680">solutions</span> <span m="270200">of</span> <span m="270310">differential</span> <span m="270780">equations</span> <span m="271240">are</span> <span m="271310">defined</span> <span m="271710">on</span> <span m="271770">one</span> <span m="272010">single</span> <span m="272340">interval.</span> <span m="273150">So</span> <span m="273340">we</span> <span m="273480">need</span> <span m="273680">here</span> <span m="274120">to</span> <span m="274300">realize</span> <span m="274800">that</span> <span m="274960">the</span> <span m="275040">solution</span> <span m="275550">we</span> <span m="275660">had</span> <span m="279600">is</span> <span m="280540">basically</span> <span m="281030">two</span> <span m="281200">parts,</span> <span m="281710">the</span> <span m="281810">parts</span> <span m="282140">on</span> <span m="282230">the</span> <span m="282350">left</span> <span m="282660">of</span> <span m="282740">the</span> <span m="282900">asymptote</span> <span m="283380">and</span> <span m="283520">the</span> <span m="283590">part</span> <span m="283950">on</span> <span m="284100">the</span> <span m="284190">right</span> <span m="284440">of</span> <span m="284510">the</span> <span m="285010">asymptote.</span> <span m="301910">So</span> <span m="302090">the</span> <span m="302220">solution</span> <span m="302800">to</span> <span m="302950">our</span> <span m="303250">initial</span> <span m="303680">value</span> <span m="303960">problems</span> <span m="304440">needs</span> <span m="304670">to</span> <span m="304790">be</span> <span m="304960">the</span> <span m="305050">solution</span> <span m="305520">that</span> <span m="305680">passes</span> <span m="306140">through</span> <span m="306350">the</span> <span m="306500">imposed</span> <span m="306920">initial</span> <span m="307240">condition,</span> <span m="308110">which</span> <span m="308290">was</span> <span m="308580">y</span> <span m="309000">of zero</span> <span m="309280">equals</span> <span m="309590">to</span> <span m="309710">1.</span> <span m="310270">So</span> <span m="310410">it</span> <span m="310530">needs</span> <span m="310800">to</span> <span m="310910">be</span> <span m="311360">this</span> <span m="312340">solution.</span> </p>
+<p><span m="317270">So</span> <span m="317490">now,</span> <span m="318700">if</span> <span m="318920">we</span> <span m="319360">move</span> <span m="319690">on</span> <span m="320010">to</span> <span m="320630">the</span> <span m="320710">solution</span> <span m="321900">of</span> <span m="322350">the</span> <span m="322570">second</span> <span m="322940">part</span> <span m="323170">of</span> <span m="323260">the</span> <span m="323360">problem,</span> <span m="323800">b,</span> <span m="324610">we</span> <span m="324900">were</span> <span m="325080">asked</span> <span m="325390">to</span> <span m="325480">find</span> <span m="325810">the</span> <span m="325900">general</span> <span m="326300">solution</span> <span m="326770">of</span> <span m="326860">the</span> <span m="326950">problem,</span> <span m="328130">which</span> <span m="328370">means</span> <span m="328710">that</span> <span m="328860">we</span> <span m="328960">need</span> <span m="329120">to</span> <span m="329240">account</span> <span m="329550">now</span> <span m="329750">for</span> <span m="329980">all</span> <span m="330130">the</span> <span m="330290">solutions,</span> <span m="330990">regardless</span> <span m="331460">of</span> <span m="331540">their</span> <span m="331700">initial</span> <span m="332020">condition.</span> <span m="332910">So</span> <span m="333330">we</span> <span m="333540">already</span> <span m="334030">answered</span> <span m="334470">this</span> <span m="334690">partially</span> <span m="335270">during</span> <span m="335560">the</span> <span m="335860">solution</span> <span m="336890">of</span> <span m="337160">part</span> <span m="337490">a</span> <span m="337880">where</span> <span m="338260">we</span> <span m="338920">solved</span> <span m="340100">using</span> <span m="340470">indefinite</span> <span m="340940">integrals</span> <span m="341550">and</span> <span m="341730">arrived</span> <span m="342470">to</span> <span m="342830">the</span> <span m="342920">solution</span> <span m="345350">minus</span> <span m="345780">1</span> <span m="346410">over</span> <span m="346740">x</span> <span m="347000">plus</span> <span m="347220">c,</span> <span m="347590">where</span> <span m="347790">here</span> <span m="348160">we</span> <span m="348290">had,</span> <span m="348540">basically,</span> <span m="349090">an</span> <span m="349500">undetermined</span> <span m="349640">constant of</span> <span m="350120">integration.</span> <span m="351420">So</span> <span m="351540">this</span> <span m="351710">is</span> <span m="351860">one</span> <span m="352640">general</span> <span m="353080">solution.</span> </p>
+<p><span m="354010">But</span> <span m="354220">remember</span> <span m="354860">that</span> <span m="355060">we</span> <span m="355160">need</span> <span m="355340">to</span> <span m="355650">give</span> <span m="356970">all</span> <span m="357250">the</span> <span m="357350">solutions</span> <span m="357860">of</span> <span m="357960">the</span> <span m="358040">problem.</span> <span m="358790">So</span> <span m="358980">when</span> <span m="359210">we</span> <span m="359420">arrived</span> <span m="359830">at</span> <span m="359930">the</span> <span m="360080">solution,</span> <span m="360760">we</span> <span m="360870">excluded</span> <span m="361520">the</span> <span m="361600">solution</span> <span m="363030">y</span> <span m="363340">equals</span> <span m="363760">zero,</span> <span m="364040">which</span> <span m="364200">was</span> <span m="364370">basically</span> <span m="364710">a</span> <span m="364770">lost</span> <span m="365160">solution</span> <span m="366100">because</span> <span m="366440">we</span> <span m="366530">had</span> <span m="366730">to</span> <span m="366820">impose</span> <span m="367120">the</span> <span m="367200">condition</span> <span m="367690">y</span> <span m="368000">not</span> <span m="368190">equal</span> <span m="368430">to</span> <span m="368530">zero.</span> <span m="370870">So</span> <span m="371090">we</span> <span m="371250">need,</span> <span m="371540">when</span> <span m="371720">we</span> <span m="371820">give</span> <span m="372050">the</span> <span m="372150">general</span> <span m="372550">solution</span> <span m="375310">to</span> <span m="375430">this</span> <span m="376660">differential</span> <span m="377140">equation,</span> <span m="377990">to</span> <span m="378200">recover</span> <span m="378660">the</span> <span m="378870">lost</span> <span m="379080">solution.</span> <span m="380010">And</span> <span m="380460">then</span> <span m="380840">we</span> <span m="380980">basically</span> <span m="381410">have</span> <span m="381960">one</span> <span m="382230">kind</span> <span m="382380">of</span> <span m="382530">solution,</span> <span m="383110">minus</span> <span m="383510">1</span> <span m="383720">over</span> <span m="383910">x</span> <span m="384140">plus</span> <span m="384360">c,</span> <span m="384820">that</span> <span m="384980">excludes</span> <span m="385530">y</span> <span m="385710">equals</span> <span m="385910">to</span> <span m="386040">zero</span> <span m="386560">and</span> <span m="386690">another</span> <span m="387060">kind</span> <span m="387280">of</span> <span m="387340">solution</span> <span m="387880">that</span> <span m="388020">is</span> <span m="388370">simply</span> <span m="389180">the</span> <span m="389280">zero</span> <span m="389590">solution.</span> </p>
+<p><span m="390760">So</span> <span m="390930">to</span> <span m="391080">summarize,</span> <span m="392400">the</span> <span m="392540">important</span> <span m="392920">points</span> <span m="393280">of</span> <span m="393360">this</span> <span m="393540">problem</span> <span m="393890">is</span> <span m="394010">to</span> <span m="394110">remember</span> <span m="394620">the</span> <span m="394680">separation</span> <span m="395250">of</span> <span m="395320">variables</span> <span m="395820">and</span> <span m="395910">how</span> <span m="396070">to</span> <span m="396250">use</span> <span m="396500">it</span> <span m="396800">and</span> <span m="396970">the</span> <span m="397050">fact</span> <span m="397320">that</span> <span m="397470">using</span> <span m="397880">it</span> <span m="400660">imposes</span> <span m="401130">conditions</span> <span m="401800">that</span> <span m="401980">require</span> <span m="403050">us</span> <span m="403290">to</span> <span m="403420">recover</span> <span m="403910">lost</span> <span m="404250">solutions</span> <span m="404730">at</span> <span m="404840">the</span> <span m="404940">end</span> <span m="405100">of</span> <span m="405170">the</span> <span m="405270">problem</span> <span m="405750">if we're</span> <span m="405960">asked</span> <span m="406210">to</span> <span m="406300">give</span> <span m="406910">general</span> <span m="407250">solution.</span> <span m="408210">Another</span> <span m="408630">point</span> <span m="408990">to</span> <span m="409340">remember</span> <span m="409850">is</span> <span m="410030">that</span> <span m="410210">even</span> <span m="410460">a</span> <span m="410510">simple</span> <span m="411340">ODE</span> <span m="411810">can</span> <span m="412000">lead</span> <span m="412230">to</span> <span m="412990">relatively</span> <span m="413450">complex</span> <span m="414000">behavior</span> <span m="414580">which</span> <span m="414850">drives</span> <span m="415050">the</span> <span m="415120">presence</span> <span m="415640">of</span> <span m="415740">this</span> <span m="415920">vertical</span> <span m="416350">asymptote</span> <span m="416730">that</span> <span m="416940">you</span> <span m="417100">need</span> <span m="417340">to then</span> <span m="417670">know</span> <span m="418750">how</span> <span m="418940">to</span> <span m="419110">deal</span> <span m="419350">with</span> <span m="419590">and</span> <span m="419770">determine</span> <span m="420330">which</span> <span m="420870">part</span> <span m="421180">of</span> <span m="421260">the</span> <span m="421380">solutions</span> <span m="422020">that</span> <span m="422150">you've</span> <span m="422370">obtained</span> <span m="422890">is</span> <span m="423120">the</span> <span m="423230">real</span> <span m="423410">solution</span> <span m="423890">to</span> <span m="424010">the</span> <span m="424150">initial</span> <span m="424530">value</span> <span m="424800">problem</span> <span m="425180">that</span> <span m="425410">you're</span> <span m="425650">given.</span> <span m="426610">So</span> <span m="426730">I</span> <span m="426790">hope</span> <span m="427480">that</span> <span m="428840">you</span> <span m="428990">are</span> <span m="429190">OK</span> <span m="431480">with</span> <span m="431670">this</span> <span m="431840">problem</span> <span m="432520">and</span> <span m="433100">you</span> <span m="433240">will</span> <span m="433720">use</span> <span m="434060">these</span> <span m="434280">approaches</span> <span m="435310">many</span> <span m="435610">times</span> <span m="436040">for</span> <span m="436140">the</span> <span m="436260">rest</span> <span m="436480">of</span> <span m="436550">the</span> <span m="436650">course.</span> </p>
+</div>
+        <div id="vid_index" itemprop="description" class="tabContent hide">
+<h2 class="subhead">Free Downloads</h2>
+<h3 class="subsubhead">Video</h3>
+<ul>
+<li>iTunes U (<a href="http://itunes.apple.com/us/itunes-u/separable-equations/id493274885?i=109175787">MP4 - 16MB</a>)</li>
+<li>Internet Archive (<a href="http://www.archive.org/download/MIT18.03SCF11/MIT18_03SC_110708_L1_300k.mp4">MP4 - 16MB</a>)</li>
+</ul>
+<br><h3 class="subsubhead">Caption</h3>
+<ul><li>English-US (<a href="../../../../contents/unit-i-first-order-differential-equations/basic-de-and-separable-equations/separable-equations/76WdBlGpxVw.srt">SRT</a>)</li></ul>
+</div>
+    
+   </div>  
+
+
+
+      					 
+        <div class="" id="parent-fieldname-bottom_html_area">
+            
+            
+        </div>
+    
+                    </main><!--Course_inner_chip tag close -->
+</div>
+<!--Course_wrapper tag close --> 
+            </div>
+<!--left tag close -->
+            <aside id="right"><!--Begin Right Portion --><div>
+    
+
+
+
+</div>
+
+                	<div>
+    
+
+
+
+</div>
+
+
+        <div class="" id="parent-fieldname-rsi_top_html_area">
+            
+            
+        </div>
+    
+
+<!-- RSI google ad space-->
+
+
+<div id="google_ads">    
+    <script type="text/javascript" src="https://partner.googleadservices.com/gampad/google_service.js"></script><script type="text/javascript">GS_googleAddAdSenseService("ca-pub-6588555046597237");GS_googleEnableAllServices();</script><script type="text/javascript">GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_A_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_B_DL");GA_googleAddSlot("ca-pub-6588555046597237", "SCH_VID_INDIV_SLOT_C_DL");</script><script type="text/javascript">GA_googleFetchAds();</script><script language="javascript" type="text/javascript">
+GA_googleAddAttr("TYPE","HOUSE");
+GA_googleAddAttr("DEPARTMENT","18");
+GA_googleAddAttr("CRS_BEG2","03");
+GA_googleAddAttr("CRS_END","SC");
+GA_googleAddAttr("SESSION","F");
+GA_googleAddAttr("YEAR","11");
+</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_A_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_B_DL");</script><script type="text/javascript">GA_googleFillSlot("SCH_VID_INDIV_SLOT_C_DL");</script>
+</div>
+
+<!-- End RSI ads--> 
+
+<div>
+    
+
+
+
+</div>
+
+            </aside><!--Right div close --><div class="clear"></div> 
+        </div>
+<!--grid tag close --> 
+      </div>
+		
+		<footer id="bottom"><div id="grid">
+				
+<div id="portletwrapper-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572" class="portletWrapper kssattr-portlethash-6f63772e626f74746f6d706f72746c65746d616e616765720a636f6e746578740a2f506c6f6e650a736974652d666f6f746572">
+<div class="portletStaticText portlet-static-site-footer"><div id="footer">
+<nav aria-label="Footer"><nav id="foot-c1" class="grid_2 alpha" aria-labelledby="f-find-courses"><span class="footer" id="f-find-courses" aria-hidden="true">Find Courses</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/courses/find-by-topic/">Find by Topic</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-number/">Find by Course Number</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-department/">Find by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/new-courses/">New Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/most-visited-courses/">Most Visited Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/ocw-scholar/">OCW Scholar Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/audio-video-courses/">Audio/Video Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/online-textbooks/">Online Textbooks</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/resources/">Supplemental Resources</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mitx-related-courseware/">MITx &amp; Related OCW Courses</a></li>
+    <li><a href="https://ocw.mit.edu/courses/translated-courses/">Translated Courses</a></li>
+</ul></nav><div id="foot-c2" class="grid_2"><nav aria-labelledby="f-for-educators"><span id="f-for-educators" class="footer" aria-hidden="true">For Educators</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/educator/?view=instructional&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=approaches">Search for Instructor Insights</a></li>
+    <li><a href="https://ocw.mit.edu/educator/?view=teaching&amp;utm_campaign=Educator&amp;utm_source=footer&amp;utm_medium=find-courses&amp;utm_content=materials">Search for Teaching Materials</a></li>
+    <li><a href="https://ocw.mit.edu/courses/instructor-insights/">Instructor Insights by Department</a></li>
+    <li><a href="https://ocw.mit.edu/courses/find-by-topic/#cat=teachingandeducation">MIT Courses about Teaching and Education</a></li>
+    <li><a href="https://ocw.mit.edu/high-school/">Highlights for High School</a></li>
+    <li><a href="http://k12videos.mit.edu" aria-label="External Link: MIT+K12 Videos">MIT+K12 Videos</a></li>
+    <li><a href="http://teachingexcellence.mit.edu/" aria-label="External Link: Teaching Excellence at MIT">Teaching Excellence at MIT</a></li>
+    <li><a href="https://ocw.mit.edu/courses/mit-curriculum-guide/">MIT Undergraduate Curriculum Map</a></li>
+</ul></nav></div>
+<nav class="grid_2" id="foot-c3" aria-labelledby="f-donate"><span id="f-donate" class="footer" aria-hidden="true">Give Now</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/give/">Make a Donation</a></li>
+    <li><a href="https://ocw.mit.edu/give/why-give/">Why Give?</a></li>
+    <li><a href="https://ocw.mit.edu/give/our-supporters/">Our Supporters</a></li>
+    <li><a href="https://ocw.mit.edu/give/other-ways-to-contribute/">Other Ways to Contribute</a></li>
+    <li><a href="https://ocw.mit.edu/give/shop-ocw/">Shop OCW</a></li>
+    <li><a href="https://ocw.mit.edu/support/">Become a Corporate Sponsor</a></li>
+</ul></nav><div class="grid_2" id="foot-c4">
+<nav aria-labelledby="f-about"><span id="f-about" class="footer" aria-hidden="true">About</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/about/">About OpenCourseWare</a></li>
+    <li><a href="https://ocw.mit.edu/about/site-statistics/">Site Statistics</a></li>
+    <li><a href="https://ocw.mit.edu/about/ocw-stories/">OCW Stories</a></li>
+    <li><a href="https://ocw.mit.edu/about/newsletter/">News</a></li>
+    <li><a href="https://ocw.mit.edu/about/media-coverage/press-releases/">Press Releases</a></li>
+</ul></nav><!--about--><nav aria-labelledby="f-tools"><span id="f-tools" class="footer" aria-hidden="true">Tools</span>
+<ul class="foot-bullet" role="presentation">
+<li><a href="https://ocw.mit.edu/help/">Help &amp; FAQs</a></li>
+    <li><a href="../../../../common/jsp/feedback.htm">Contact Us</a></li>
+    <li><a href="https://ocw.mit.edu/help/site-map/">Site Map</a></li>
+    <li><a href="../../../../common/terms/index.htm">Privacy &amp; Terms of Use</a></li>
+    <li><a href="https://ocw.mit.edu/help/rss/">RSS Feeds</a></li>
+</ul></nav><!--tools-->
+</div>
+</nav><aside style="min-height: 289px;" aria-labelledby="f-our-corporate-supporters" class="grid_4 omega" id="foot-c5"><span aria-hidden="true" class="footer" id="f-our-corporate-supporters">Our Corporate Supporters</span>           <!-- HOME_CORP_LOGO_1 -->
+<div id="div-gpt-ad-1388181177156-0" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-0'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_2 -->
+<div id="div-gpt-ad-1388181177156-1" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-1'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_3 -->
+<div id="div-gpt-ad-1388181177156-2" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-2'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_4 -->
+<div id="div-gpt-ad-1388181177156-3" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-3'); });
+            </script></div>
+<!-- HOME_CORP_LOGO_5 -->
+<div id="div-gpt-ad-1388181177156-4" class="sponsors_google_ads_even"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-4'); });
+              </script></div>
+<!-- HOME_CORP_LOGO_6 -->
+<div id="div-gpt-ad-1388181177156-5" class="sponsors_google_ads_odd"><script type="text/javascript">
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1388181177156-5'); });
+              </script></div>
+</aside><div class="grid_12 alpha omega" itemprop="publisher" itemscope="" itemtype="http://schema.org/CollegeOrUniversity">
+<h4 class="footer" style="border-top: thin solid #d5c9ba; padding-top: 10px; margin-bottom: 10px;">About <span itemprop="name">MIT OpenCourseWare</span>
+</h4>
+<p style="color: #999; font-size: 1em; line-height: 1.5em; margin-top: 10px;" itemprop="description">MIT OpenCourseWare makes the materials used in the teaching of almost all of MIT's subjects available on the Web, free of charge. With more than 2,400 courses available, OCW is delivering on the promise of open sharing of knowledge. <a href="http://ocw.mit.edu/about/">Learn more »</a></p>
+</div>
+<div id="foot-copy" class="grid_12 alpha omega" style="border-top: none;">
+<a href="http://web.mit.edu"><img src="../../../../common/images/logo_mit.png" alt="Massachusetts Institute of Technology logo and name." style="width: 195; height: 44;"></a><a href="http://odl.mit.edu"><img src="https://ocw.mit.edu/images/logo_odl.png" alt="MIT Office of Digital Learning logo and name." style="width: 289; height: 54; vertical-align: top;"></a><a href="http://www.oeconsortium.org/"><img src="https://ocw.mit.edu/images/logo_oec.png" alt="Open Education Consortium logo." style="width: 219px; height: 59px; vertical-align: top;"></a><a rel="license" itemprop="useRightsUrl" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img src="../../../../common/images/cc_by-nc-sa.png" alt="Creative Commons logo with terms BY-NC-SA." style="width: 126px; height: 44px; margin-right: 0; margin-left: 13px;"></a>
+<p class="copyright">© 2001–2018<br>
+Massachusetts Institute of Technology</p>
+<p style="font-size: 0.9em; margin-bottom: 15px;">Your use of the MIT OpenCourseWare site and materials is subject to our <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons License</a> and other <a href="../../../../common/terms/index.htm" rel="cc:morePermissions">terms of use</a>.</p>
+</div>
+</div></div>
+
+</div>
+
+
+
+
+
+                
+			</div> <!-- bottom grid end -->
+		</footer><!-- footer bottom end -->
+</body>
+</html>
